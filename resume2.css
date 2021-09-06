@@ -1,0 +1,156 @@
+body {
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+  border-top: 1rem solid rgb(71, 85, 172);
+  padding-top: 4px;
+}
+
+.head {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(107, 107, 110);
+  font-size: 2.2rem;
+}
+#temp2 {
+  display: none;
+}
+
+.p {
+  color: rgb(90, 87, 87);
+  font-weight: 600;
+}
+.form-inputs {
+  margin-top: 0.8rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(90, 87, 87);
+}
+
+.form-inputssub {
+  margin-top: 0.4rem;
+}
+
+.form-labelsub {
+  color: rgb(142, 140, 140);
+  font-weight: 700;
+}
+
+.btn-co {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.button {
+  background: rgb(77, 77, 162);
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  transition: transform 200ms ease;
+}
+
+.button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.button2 {
+  background: rgb(74, 74, 160);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 150ms ease;
+  margin-top: 1rem;
+}
+
+.button2:hover {
+  color: rgb(204, 199, 199);
+}
+
+.button-sub {
+  background: rgb(77, 77, 162);
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: 3px;
+}
+.button-sub:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 782px) {
+  .button2 {
+    font-weight: 750;
+    font-size: 1.29rem;
+  }
+}
+
+.from {
+  font-size: 0.9rem;
+  margin-right: 6px;
+  color: grey;
+}
+
+.from-to {
+  font-size: 0.9rem;
+  margin-right: 6px;
+  color: grey;
+  margin-left: 4px;
+}
+
+.ff {
+  width: 32%;
+}
+
+.too {
+  width: 32%;
+}
+
+/*#input_f {
+      display: none;
+    }*/
+
+/*template*/
+
+.card {
+  margin: 5px;
+  margin-top: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card-title {
+  margin: 6px;
+  margin-top: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 1.4rem;
+  font-weight: 750;
+  background-color: #c6d1cf;
+  padding: 4px;
+}
+
+.card-body {
+  background: rgb(240 242 242);
+}
+
+.address-cont {
+  margin: 5px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#temp2 {
+  border: 2.6px solid rgb(113, 110, 110);
+  padding: 2px;
+}
+
+.acad_card {
+  margin-top: 0px;
+}
