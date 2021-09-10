@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./resume2.css">
+    <link rel="stylesheet" href="./resume.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 </head>
-<body id="body">
+<body>
 
   <!--Form-->
 
@@ -32,15 +32,15 @@
 
             <div class="form-inputs">
                 <label for="contact" class="form-label">Your Contact</label>
-                <input type="text" class="form-control" id="Inputcontact" placeholder="Enter mail">
-                <input type="text" class="form-control  mt-1" id="Inputcontact0" placeholder="Enter contact">
+                <input type="text" class="form-control" id="Inputcontact0" placeholder="Enter mail">
+                <input type="text" class="form-control  mt-1" id="Inputcontact" placeholder="Enter contact">
               </div>
 
 
             <div class="form-inputs">
                 <label for="Address" class="form-label">Your Address</label>
-                <textarea type="text" class="form-control" id="Inputaddres" rows="5" placeholder="Enter here">
-               </textarea>
+                <textarea type="text" class="form-control" id="Inputaddresses" rows="5" placeholder="Enter here">
+                </textarea>
               </div>
 
               <div class="form-inputs">
@@ -89,14 +89,6 @@
             </div>
            </div>
 
-           <div class="form-inputs" id="responsibility">
-            <label for="Pjs" class="form-label">Position of Responsibility</label>
-            <input type="text" class="form-control res" id="resp" placeholder="Enter here">
-            <div class="container btn-co" id="resp_button" style="text-align: center;">
-              <button class="btn button" id="respon_button">+</button>
-            </div>
-           </div>
-
            <div class="form-inputs" id="is">
             <label for="Ed" class="form-label">Internships</label>
             <input type="text" class="form-control interns" id="Inputinternships" placeholder="Enter here"> 
@@ -131,141 +123,140 @@
 
 </div>
 
-<!--Template-->
 
-<div class="container" id="temp2" class="resume-template-2">
+  <!--Template-->
 
+<div class="container" id="templ" style="display: none;">
 
-  <div class="row" >
-    <div class="col-sm-12 col-sm-12">
-      <div class="card-title acad_card text-center">ACADEMIC PROFILE</div>
-  <div class="card" style="margin-bottom: 2px;padding: 0px;">
-  <div class="card-body" style="border-bottom: 4px solid rgb(127, 124, 124);">
-       <p class="card-text">
-        <ul id="acad-list">
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
-      </p>
+  <div class="row" id="intr">
+
+    <div  class="col-sm-12 col-md-12 text-center">
+    <h1 style="font-size: 4rem" class="titles">WILL SMITH</h1>
     </div>
-  </div>
-  </div>
-  </div>
-  
 
-<div class="row" style="margin-top: 0px;padding-top: 0px;">
-  <div class="col-sm-12 col-sm-12">
-    <div class="card-title skill_card text-center" style="margin-top: 0px;">SKILLS</div>
-<div class="card">
-<div class="card-body">
-     <p class="card-text">
-      <ul id="skil-list">
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+  </div>
+
+  <div class="row" id="cv">
+
+    <div  class="col-sm-4 col-md-4" id="personal">
+      <div id="links">
+       <div class="box"></div>
+       <div id="head">Skills</div>
+       <hr style="width: 3rem;height: 3.5px;">
+       <div>
+       <hr class="side">
+       <ul class="link-lists" id="skilllist">
+         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis</li>
+         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis </li>
+         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis </li> 
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis </li> 
+       </ul>
+      </div>
+     </div>
+
+     <div id="skills">
+      <div class="box"></div>
+      <div id="head2">Links</div>
+      <hr style="width: 3rem;height: 3.5px;">
+      <hr class="side">
+      <ul class="link-lists2">
+        <li id="git">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li id="linkedin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li id="otherss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
       </ul>
-    </p>
-  </div>
-</div>
-</div>
-</div>
 
-<div class="row">
-  <div class="col-sm-12 col-sm-12">
-    <div class="card-title IN_card text-center">INTERNSHIP/TRAINING</div>
-<div class="card">
-<div class="card-body">
-     <p class="card-text">
-      <ul id="IN-list">
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </div>
+
+    <div id="contacts">
+      <div class="box"></div>
+      <div id="head2">Contacts</div>
+      <hr style="width: 3rem;height: 3.5px;">
+      <hr class="side0">
+      <ul class="link-lists3">
+        <li id="ph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li id="mailed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
       </ul>
-    </p>
-  </div>  
-</div>
-</div>
-</div>
 
-<div class="row">
-  <div class="col-sm-12 col-sm-12">
-    <div class="card-title PJ_card text-center">PROJECTS</div>
-<div class="card">
-<div class="card-body">
-     <p class="card-text">
-      <ul id="PJ-list">
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-      </ul>
-    </p>
+    </div>
+    </div>
+
+
+   <div class="col-sm-8 col-md-8" id="prof">
+
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title edu_card">EDUCATION</h4>
+
+        <p class="card-text">
+          <ul id="ed-list">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="border: none;margin-top: 1rem;">
+      <div class="card-body">
+        <h4 class="card-title proj_card">PROJECTS</h4>
+
+        <p class="card-text">
+          <ul id="projlist">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="border: none;margin-top: 1rem;">
+      <div class="card-body">
+        <h4 class="card-title i_card">INTERNSHIPS</h4>
+
+        <p class="card-text">
+          <ul id="in-List">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+           </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+           </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="border: none;margin-top: 1rem;">
+      <div class="card-body">
+        <h4 class="card-title ai_card">HONOURS AND ACHIEVEMENTS</h4>
+
+        <p class="card-text">
+          <ul id="ai-list">
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+   </div>
   </div>
-</div>
-</div>
-</div>
 
-<div class="row">
-  <div class="col-sm-12 col-sm-12">
-    <div class="card-title PS_card text-center">POSITION OF RESPONSIBILITY</div>
-<div class="card">
-<div class="card-body">
-     <p class="card-text">
-      <ul id="P-list">
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-      </ul>
-    </p>
+  <div class="container btn-co" style="text-align: center;">
+    <button class="btn button2" id="last">Print CV</button>
   </div>
-</div>
-</div>
-</div>
-
-
-<div class="row">
-  <div class="col-sm-12 col-sm-12">
-    <div class="card-title AC_card text-center">HONOURS AND ACHIEVEMENTS</div>
-<div class="card">
-<div class="card-body">
-     <p class="card-text">
-      <ul id="AC-list">
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-      </ul>
-    </p>
-  </div>
-</div>
-</div>
-</div>
-
-
-
-<footer class="address-cont" style="display: flex;flex-direction: row;justify-content: space-between;">
-  <div class="address"></div>
-  <div class="contact"></div>
-</footer>
-
 
 </div>
-
-<div class="container btn-co" style="text-align: center;">
-  <button class="btn button2" id="last" style="display: none;">Print CV</button>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-<script src="js/resume2.js"></script>
-<script src="js/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./resume.js"></script>
 </body>
-</body>
-</html>
+</html> 

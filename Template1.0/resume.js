@@ -2,7 +2,6 @@ const b_button=document.querySelector("#b_button");
 const in_button=document.querySelector("#in_button");
 const ed_button=document.querySelector("#ed_button");
 const project_button=document.querySelector("#project_button");
-const respon_button=document.querySelector("#respon_button");
 
 
 
@@ -142,35 +141,6 @@ in_button.addEventListener("click",()=>{
 
 
   })
-  
-  respon_button.addEventListener("click",()=>{
-
-    let newinput=document.createElement("input");
-    newinput.classList.add("form-control");
-    newinput.classList.add("res");
-     newinput.setAttribute("placeholder","Enter here");
-    newinput.classList.add("mt-2");
-    let msg=document.createElement("button");
-    msg.classList.add("form-text");
-    msg.classList.add("button-sub");
-     msg.innerText="-";
-
-
-    let before=document.querySelector("#resp_button");
-    let after=document.querySelector("#responsibility");
-
-
-    after.insertBefore(newinput,before);
-    after.insertBefore(msg,before);
-
-
-    msg.addEventListener("click",()=>{
-      newinput.remove();
-      msg.remove();
-    })
-
-
-  })
 
 
   project_button.addEventListener("click",()=>{
@@ -232,93 +202,110 @@ in_button.addEventListener("click",()=>{
   })
 
 
-const generate= document.getElementById("gene");
-generate.addEventListener("click",()=>{
+  /*RESUME*/
 
-  
+  let cvgen=document.querySelector("#gene")
 
-  
-  let proj=document.getElementsByClassName("projj");
-  let strings=''
-
-  for(let e of proj)
-  {
-    strings+=`<li> ${e.value} </li>`;
-
-  }
-
-  document.querySelector("#PJ-list").innerHTML=strings;
+  cvgen.addEventListener("click",()=>{
 
 
-  let skillst=document.getElementsByClassName("skillst");
-  let st6=''
-
-  for(let e of skillst)
-  {
-    st6+=`<li> ${e.value} </li>`;
-
-  }
-  document.querySelector("#skil-list").innerHTML=st6;
-  
-  let int=document.getElementsByClassName("interns");
-  let st='';
-  for(let e of int)
-  {
-    st+=`<li> ${e.value} </li>`;
-
-  }
-
-  document.querySelector("#IN-list").innerHTML=st;
-  
-  let ai=document.getElementsByClassName("ai");
-  let st4=''
-
-  for(let e of ai)
-  {
-    st4+=`<li> ${e.value} </li>`;
-
-  }
-
-  document.querySelector("#AC-list").innerHTML=st4;
-
-  let res=document.getElementsByClassName("res");
-  let st0=''
-
-  for(let e of res)
-  {
-    st0+=`<li> ${e.value} </li>`;
-
-  }
-
-  document.querySelector("#P-list").innerHTML=st0;
-
-  document.querySelector(".address").innerHTML=document.getElementById("Inputaddres").value;
+    let names=document.querySelector(".titles");
+    let nvalue=document.querySelector("#Inputname").value;
+    names.innerHTML=nvalue;
 
 
- 
-  /*document.querySelector(".contact").innerHTML=document.getElementById("Inputcontact0").value;
-  
- */ 
- let str87=document.getElementById("Inputcontact0").value;
- let str4="address";
- let str_f=str4+str87;
-  
-  
- document.querySelector(".contact").innerHTML=str_f;
 
- document.querySelector("#input_f").setAttribute("style","display:none;");
- document.querySelector("#temp2").setAttribute("style","display:block;");
- last.setAttribute("style","display:visible;");
- let element=document.getElementById("body")
- element.setAttribute("style","border:none;");
-})
+    let proj=document.getElementsByClassName("projj");
+    let strings=''
+
+    for(let e of proj)
+    {
+      strings+=`<li> ${e.value} </li>`;
+
+    }
+
+    document.querySelector("#projlist").innerHTML=strings;
+
+
+
+    document.querySelector("#git").innerHTML=document.querySelector("#Inputgit").value;
+    document.querySelector("#linkedin").innerHTML=document.querySelector("#Inputlinked").value;
+    document.querySelector("#otherss").innerHTML=document.querySelector("#Inputother").value;
+
+    document.querySelector("#ph").innerHTML=document.querySelector("#Inputcontact0").value;
+    document.querySelector("#mailed").innerHTML=document.querySelector("#Inputcontact").value;
+
+
+    let int=document.getElementsByClassName("interns");
+    let fr=document.getElementsByClassName("ff");
+    let t=document.getElementsByClassName("too");
+    let st=''
+    for(let e of int)
+    {
+      st+=`<li class="it"> ${e.value} </li>`;
+
+    }
+    console.log(st);
+    document.querySelector("#in-List").innerHTML=st;
+
+    let st2=''
+
+    /*for(let e of fr )
+    {
+      st2+=`<p> ${e.value} </p>`;
+      
+    }
+    document.querySelector(".it").innerHTML=st2;*/
+
+
+
+    let edtc=document.getElementsByClassName("edtc");
+    let st3=''
+
+    for(let e of edtc)
+    {
+      st3+=`<li> ${e.value} </li>`;
+
+    }
+
+    document.querySelector("#ed-list").innerHTML=st3;
+
+    let ai=document.getElementsByClassName("ai");
+    let st4=''
+
+    for(let e of ai)
+    {
+      st4+=`<li> ${e.value} </li>`;
+
+    }
+
+    document.querySelector("#ai-list").innerHTML=st4;
+
+
+
+
+
+    let skillst=document.getElementsByClassName("skillst");
+    let st6=''
+
+    for(let e of skillst)
+    {
+      st6+=`<li> ${e.value} </li>`;
+
+    }
+   console.log(st6);
+    document.querySelector("#skilllist").innerHTML=st6;
+
+
+    document.querySelector("#input_f").setAttribute("style","display:none;");
+    document.querySelector("#templ").setAttribute("style","display:block;");
+  })
+
 const last=document.querySelector("#last");
 
-let ress=document.querySelector("#temp2");
 
 last.addEventListener("click",()=>{
-  
-  ress.classList.add("scale");
-  /*last.setAttribute("style","visibility:hidden");*/
-  html2pdf(ress);
+
+  last.setAttribute("style","visibility:hidden");
+  window.print();
 })
