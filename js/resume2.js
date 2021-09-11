@@ -82,7 +82,7 @@ in_button.addEventListener("click",()=>{
      ip.classList.add("form-control");
      ip.classList.add("form-control-sm");
      ip.classList.add("mt-1");
-     ip.classList.add("ff");
+     ip.classList.add("too");
 
 
 
@@ -202,7 +202,7 @@ in_button.addEventListener("click",()=>{
   })
 
 
- ah_button.addEventListener("click",()=>{
+ b_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
     newinput.classList.add("ai");
@@ -246,7 +246,6 @@ generate.addEventListener("click",()=>{
     strings+=`<li> ${e.value} </li>`;
 
   }
-
   document.querySelector("#PJ-list").innerHTML=strings;
 
 
@@ -261,15 +260,41 @@ generate.addEventListener("click",()=>{
   document.querySelector("#skil-list").innerHTML=st6;
   
   let int=document.getElementsByClassName("interns");
-  let st='';
+ // let st='';
+ const st = [];
+ let k = 0 ;
   for(let e of int)
   {
-    st+=`<li> ${e.value} </li>`;
-
+    st[k]=`<li> ${e.value} </li>`;
+k++;
+  }
+ // document.querySelector("#IN-list").innerHTML=st;
+  let fr = document.getElementsByClassName("ff");
+ // let str1 =''
+  const str1 =[];
+  let i=0;
+ for(let e of fr){
+ str1[i]=` ${e.value} `;
+ i++;
   }
 
-  document.querySelector("#IN-list").innerHTML=st;
-  
+  //document.querySelector("#F-list").innerHTML=str1;
+  let to = document.getElementsByClassName("too");
+  const str2 =[];
+  i=0;
+  for(let e of to){
+    str2[i]= ` ${e.value} `;
+    i++;
+  }
+ // document.querySelector("#T-list").innerHTML=str2;
+ let string1='';
+ for(let j=0;j<k;j++)
+ {
+   string1 += st[j];
+   string1 += 'FROM :  ' + str1[j] + '&nbsp &nbsp &nbsp';
+   string1 += 'TO :  ' + str2[j] + '<br>';
+ }
+ document.querySelector("#IN-list").innerHTML=string1;
   let ai=document.getElementsByClassName("ai");
   let st4=''
 
