@@ -202,7 +202,7 @@ in_button.addEventListener("click",()=>{
   })
 
 
- b_button.addEventListener("click",()=>{
+ ah_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
     newinput.classList.add("ai");
@@ -235,36 +235,58 @@ in_button.addEventListener("click",()=>{
 const generate= document.getElementById("gene");
 generate.addEventListener("click",()=>{
 
-  
+  let acad=document.getElementsByClassName("edtc");
+  let st12=''
+
+  for(let e of acad)
+  { if(e.value == '')break;
+    st12+=`<li> ${e.value} </li>`;
+
+  }
+  if(st12==''){
+    document.querySelector(".acd").setAttribute("style","display:none;");
+  }
+  else{
+  document.querySelector("#acad-list").innerHTML=st12;
+  } 
 
   
   let proj=document.getElementsByClassName("projj");
   let strings=''
 
   for(let e of proj)
-  {
+  { if(e.value == '')break;
     strings+=`<li> ${e.value} </li>`;
 
   }
+  if(strings==''){
+    document.querySelector(".projects").setAttribute("style","display:none;");
+  }
+  else{
   document.querySelector("#PJ-list").innerHTML=strings;
-
+  }
 
   let skillst=document.getElementsByClassName("skillst");
   let st6=''
 
   for(let e of skillst)
-  {
+  { if(e.value == '')break;
     st6+=`<li> ${e.value} </li>`;
 
   }
+  if(st6 == ''){
+    document.querySelector(".skl").setAttribute("style","display:none;");
+  }
+  else{
   document.querySelector("#skil-list").innerHTML=st6;
+  }
   
   let int=document.getElementsByClassName("interns");
  // let st='';
  const st = [];
  let k = 0 ;
   for(let e of int)
-  {
+  { if(e.value=='')break;
     st[k]=` ${e.value} `;
 k++;
   }
@@ -274,6 +296,7 @@ k++;
   const str1 =[];
   let i=0;
  for(let e of fr){
+   if(e.value=='')break;
  str1[i]=` ${e.value} `;
  i++;
   }
@@ -283,6 +306,7 @@ k++;
   const str2 =[];
   i=0;
   for(let e of to){
+    if(e.value=='')break;
     str2[i]= ` ${e.value} `;
     i++;
   }
@@ -294,27 +318,37 @@ k++;
    string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
    string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
  }
+ if(string1==''){
+   document.querySelector(".int1").setAttribute("style","display:none;");
+ }
+ else{
  document.querySelector("#IN-list").innerHTML=string1;
+ }
   let ai=document.getElementsByClassName("ai");
   let st4=''
 
   for(let e of ai)
-  {
+  { if(e.value=='')break;
     st4+=`<li> ${e.value} </li>`;
 
   }
-
+  if(st4==''){
+    document.querySelector(".honours").setAttribute("style","display:none;");
+  }
+  else{
   document.querySelector("#AC-list").innerHTML=st4;
-
+  }
   let res=document.getElementsByClassName("res");
   let st0=''
 
   for(let e of res)
-  {
+  {  if(e.value=='')break;
     st0+=`<li> ${e.value} </li>`;
 
   }
-
+  if(st0==''){
+    document.querySelector(".por").setAttribute("style","display:none;");
+  }
   document.querySelector("#P-list").innerHTML=st0;
 
   document.querySelector(".address").innerHTML=document.getElementById("Inputaddres").value;
