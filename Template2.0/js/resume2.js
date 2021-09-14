@@ -350,21 +350,21 @@ k++;
     document.querySelector(".por").setAttribute("style","display:none;");
   }
   document.querySelector("#P-list").innerHTML=st0;
+  let str88 = document.getElementById("Inputaddres").value;
+  if(str88!=''){
+  document.querySelector(".address").innerHTML= "Address : " + str88;
+  }
 
-  document.querySelector(".address").innerHTML=document.getElementById("Inputaddres").value;
-
-
- 
   /*document.querySelector(".contact").innerHTML=document.getElementById("Inputcontact0").value;
   
  */ 
  let str87=document.getElementById("Inputcontact0").value;
- let str4="address";
+ let str4="Contact : ";
  let str_f=str4+str87;
   
-  
+  if(str87!=''){
  document.querySelector(".contact").innerHTML=str_f;
-
+  }
  document.querySelector("#input_f").setAttribute("style","display:none;");
  document.querySelector("#temp2").setAttribute("style","display:block;");
  last.setAttribute("style","display:visible;");
