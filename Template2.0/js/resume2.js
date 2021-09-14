@@ -94,7 +94,7 @@ in_button.addEventListener("click",()=>{
      date.appendChild(labe);
      date.appendChild(ip);
 
-
+     
 
      /*-----------*/
 
@@ -265,7 +265,7 @@ generate.addEventListener("click",()=>{
  let k = 0 ;
   for(let e of int)
   {
-    st[k]=`<li> ${e.value} </li>`;
+    st[k]=` ${e.value} `;
 k++;
   }
  // document.querySelector("#IN-list").innerHTML=st;
@@ -289,10 +289,10 @@ k++;
  // document.querySelector("#T-list").innerHTML=str2;
  let string1='';
  for(let j=0;j<k;j++)
- {
-   string1 += st[j];
-   string1 += 'FROM :  ' + str1[j] + '&nbsp &nbsp &nbsp';
-   string1 += 'TO :  ' + str2[j] + '<br>';
+ { 
+   string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
+   string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
+   string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
  }
  document.querySelector("#IN-list").innerHTML=string1;
   let ai=document.getElementsByClassName("ai");
