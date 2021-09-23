@@ -202,7 +202,10 @@ in_button.addEventListener("click",()=>{
   })
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1da9e9fda8c3f544cfa923d3dc3f136e95bb0045
  
   ah_button.addEventListener("click",()=>{
 
@@ -321,6 +324,7 @@ nos.addEventListener("click",()=>{
 const generate= document.getElementById("gene");
 generate.addEventListener("click",()=>{
 
+<<<<<<< HEAD
   let acad=document.getElementsByClassName("edtc");
   let st12=''
 
@@ -336,6 +340,8 @@ generate.addEventListener("click",()=>{
   document.querySelector("#acad-list").innerHTML=st12;
   } 
 
+=======
+>>>>>>> 1da9e9fda8c3f544cfa923d3dc3f136e95bb0045
   
  
  document.querySelector(".isnt").innerHTML=document.querySelector(".institute").value;
