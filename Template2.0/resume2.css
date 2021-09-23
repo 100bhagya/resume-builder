@@ -255,7 +255,15 @@ tr {
 .c9-dd {
   display: block;
 }
-
+/*
+.button3 {
+  border-radius: 100%;
+  border: 1px solid blue;
+}
+.button3:hover {
+  cursor: pointer;
+}
 .copy {
   display: none;
 }
+*/
