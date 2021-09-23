@@ -512,16 +512,19 @@ k++;
    
    let tablesem=document.querySelector(".semdisp");
    tablesem.classList.add("display");
-   
+  
  }
 
  else if(templatek==6)
   { 
     let tablesem4=document.querySelector(".semdisp4");
     tablesem4.classList.add("display");
-     
+    
     
   }
+
+  const button3=document.querySelector(".button3");
+  button3.setAttribute("style","display:visible;");
 }
 );
 const last=document.querySelector("#last");
@@ -542,3 +545,12 @@ last.addEventListener("click",()=>{
   html2pdf(ress,opt);
 })
 
+/*const lastest=document.querySelector("#lastest");
+lastest.addEventListener("click",()=>{
+
+ document.querySelector("#input_f").setAttribute("style","display:visible;");
+ document.querySelector("#temp2").setAttribute("style","display:none;");
+ document.querySelector("#last").setAttribute("style","display:none;");
+ lastest.setAttribute("style","display:none");
+
+})*/
