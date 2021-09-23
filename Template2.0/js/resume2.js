@@ -3,7 +3,7 @@ const in_button=document.querySelector("#in_button");
 const ed_button=document.querySelector("#ed_button");
 const project_button=document.querySelector("#project_button");
 const respon_button=document.querySelector("#respon_button");
-
+const ah_button=document.querySelector("#ah_button");
 
 
 
@@ -114,7 +114,7 @@ in_button.addEventListener("click",()=>{
     })
 
   })
-  ed_button.addEventListener("click",()=>{
+ /* ed_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
     newinput.classList.add("form-control");
@@ -141,7 +141,7 @@ in_button.addEventListener("click",()=>{
     })
 
 
-  })
+  })*/
   
   respon_button.addEventListener("click",()=>{
 
@@ -202,7 +202,8 @@ in_button.addEventListener("click",()=>{
   })
 
 
- ah_button.addEventListener("click",()=>{
+
+  ah_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
     newinput.classList.add("ai");
@@ -230,11 +231,96 @@ in_button.addEventListener("click",()=>{
       msg.remove();
     })
   })
+let templatek=0;
+let triggers=0;
+let bt=0;
+
+document.querySelector("#yes").addEventListener("click",()=>{
+  triggers++;
+  console.log(triggers);
+})
+
+document.querySelector("#Btech").addEventListener("click",()=>{
+ bt=4;
+})
+
+document.querySelector("#idD").addEventListener("click",()=>{
+  bt=0;
+ })
+
+document.querySelector("#yes").addEventListener("click",()=>{
+   if(triggers%2!=0)
+   {
+    let semx= document.querySelector(".semx");
+   
+   let semx0= document.querySelector(".semx0");
+   
+   let hear=document.querySelector(".hear");
+   
+   hear.setAttribute("style","display:block;");
+   semx0.setAttribute("style","display:inline;margin-left:1rem"); 
+   semx.setAttribute("style","display:inline;");
+   
+   document.querySelector("#Btech").addEventListener("click",()=>{
+     templatek=1;
+    let c9=document.querySelector(".c9");
+    c9.setAttribute("style","display:none;");
+    let c10=document.querySelector(".c10");
+    c10.setAttribute("style","display:none;");
+   })
+
+   document.querySelector("#idD").addEventListener("click",()=>{
+    let c9=document.querySelector(".c9");
+    templatek=6;
+    c9.setAttribute("style","display:inline;");
+    let c10=document.querySelector(".c10");
+    c10.setAttribute("style","display:inline;");
+   })
+
+   if(bt==4)
+   {
+   templatek=1;
+   let c9=document.querySelector(".c9");
+   c9.setAttribute("style","display:none;");
+   let c10=document.querySelector(".c10");
+   c10.setAttribute("style","display:none;");
+   }
+
+   if(bt==0)
+   { 
+     templatek=6;
+    let c9=document.querySelector(".c9");
+   c9.setAttribute("style","display:inline;");
+   let c10=document.querySelector(".c10");
+   c10.setAttribute("style","display:inline;");
+   }
+  }
+
+  
+  })
+
+ 
+
+
+const nos=document.querySelector("#yes");
+nos.addEventListener("click",()=>{
+  if(triggers%2==0)
+  {
+  let semx= document.querySelector(".semx");
+  semx.setAttribute("style","display:none;");
+  let semx0= document.querySelector(".semx0");
+  semx0.setAttribute("style","display:none;margin-left:1rem");
+  let hear=document.querySelector(".hear");
+  
+  hear.setAttribute("style","display:none;");
+  }
+ })
 
 
 const generate= document.getElementById("gene");
 generate.addEventListener("click",()=>{
 
+<<<<<<< HEAD
   let acad=document.getElementsByClassName("edtc");
   let st12=''
 
@@ -250,7 +336,36 @@ generate.addEventListener("click",()=>{
   document.querySelector("#acad-list").innerHTML=st12;
   } 
 
+=======
+>>>>>>> 1da9e9fda8c3f544cfa923d3dc3f136e95bb0045
   
+ 
+ document.querySelector(".isnt").innerHTML=document.querySelector(".institute").value;
+ document.querySelector(".perc").innerHTML=document.querySelector("#prcntge").value;
+ document.querySelector(".yr").innerHTML=document.querySelector("#yE").value;
+
+ document.querySelector(".cfirst").innerHTML=document.querySelector(".c1").value;
+ document.querySelector(".c11").innerHTML=document.querySelector(".c2").value;
+ document.querySelector(".c12").innerHTML=document.querySelector(".c3").value;
+ document.querySelector(".c13").innerHTML=document.querySelector(".c4").value;
+ document.querySelector(".c14").innerHTML=document.querySelector(".c5").value;
+ document.querySelector(".c15").innerHTML=document.querySelector(".c6").value;
+ document.querySelector(".c16").innerHTML=document.querySelector(".c7").value;
+ document.querySelector(".c17").innerHTML=document.querySelector(".c8").value;
+ 
+ document.querySelector(".c22").innerHTML=document.querySelector(".c1").value;
+ document.querySelector(".c23").innerHTML=document.querySelector(".c2").value;
+ document.querySelector(".c24").innerHTML=document.querySelector(".c3").value;
+ document.querySelector(".c25").innerHTML=document.querySelector(".c4").value;
+ document.querySelector(".c26").innerHTML=document.querySelector(".c5").value;
+ document.querySelector(".c27").innerHTML=document.querySelector(".c6").value;
+ document.querySelector(".c28").innerHTML=document.querySelector(".c7").value;
+ document.querySelector(".c29").innerHTML=document.querySelector(".c8").value;
+ document.querySelector(".c30").innerHTML=document.querySelector(".c8").value;
+ document.querySelector(".c31").innerHTML=document.querySelector(".c8").value;
+  
+  
+ 
   let proj=document.getElementsByClassName("projj");
   let strings=''
 
@@ -314,7 +429,7 @@ k++;
  let string1='';
  for(let j=0;j<k;j++)
  { 
-   string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
+   string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
    string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
    string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
  }
@@ -370,17 +485,74 @@ k++;
  last.setAttribute("style","display:visible;");
  let element=document.getElementById("body")
  element.setAttribute("style","border:none;");
+
+
+
+ document.querySelector("#deg1").innerHTML=document.querySelector("#inputboard1").value;
+ document.querySelector("#in1").innerHTML=document.querySelector("#inputyear1").value;
+ document.querySelector("#r1").innerHTML=document.querySelector("#inpupercentage1").value;
+ document.querySelector("#y1").innerHTML=document.querySelector("#inpupass1").value;
+ document.querySelector("#deg").innerHTML=document.querySelector("#inputborad").value;
+ document.querySelector("#inn").innerHTML=document.querySelector("#inpuyear").value;
+ document.querySelector("#r").innerHTML=document.querySelector("#inpupercentage").value;
+ document.querySelector("#yre").innerHTML=document.querySelector("#inpupass").value;
+
  
  let temp=document.getElementById("temp2");
  temp.classList.add("scaling");
-})
+  
+ if(bt==4)
+ {
+   document.querySelector(".iddbte").innerHTML="Btech";
+ }
+ if(bt==0)
+ {
+   document.querySelector(".iddbte").innerHTML="IDD";
+ }
+ if(templatek==1)
+ { 
+   
+   let tablesem=document.querySelector(".semdisp");
+   tablesem.classList.add("display");
+  
+ }
+
+ else if(templatek==6)
+  { 
+    let tablesem4=document.querySelector(".semdisp4");
+    tablesem4.classList.add("display");
+    
+    
+  }
+
+  const button3=document.querySelector(".button3");
+  button3.setAttribute("style","display:visible;");
+}
+);
 const last=document.querySelector("#last");
 
 let ress=document.querySelector("#temp2");
 
+let opt = {
+  margin:       0,
+  filename:     'myresume.pdf',
+  image:        { type: 'jpeg', quality: 0.98 },
+  html2canvas:  { scale: 4 },
+  jsPDF:        {  format: 'a4', orientation: 'portrait' }
+};
+
 last.addEventListener("click",()=>{
   
   ress.classList.add("scale");
-  /*last.setAttribute("style","visibility:hidden");*/
-  html2pdf(ress);
+  html2pdf(ress,opt);
 })
+
+/*const lastest=document.querySelector("#lastest");
+lastest.addEventListener("click",()=>{
+
+ document.querySelector("#input_f").setAttribute("style","display:visible;");
+ document.querySelector("#temp2").setAttribute("style","display:none;");
+ document.querySelector("#last").setAttribute("style","display:none;");
+ lastest.setAttribute("style","display:none");
+
+})*/

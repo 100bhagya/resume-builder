@@ -80,13 +80,7 @@
             </div>
            </div>
 
-           <div class="form-inputs" id="ed">
-            <label for="Ed" class="form-label" >Education</label>
-            <input type="text" class="form-control edtc" id="Inputeducation"  placeholder="Enter here">
-            <div class="container btn-co" id="e_button" style="text-align: center;">
-              <button class="btn button" id="ed_button">+</button>
-            </div>
-           </div>
+          
 
            <div class="form-inputs" id="responsibility">
             <label for="Pjs" class="form-label">Position of Responsibility</label>
@@ -124,11 +118,145 @@
 
         </div>
     </div>
+
+    <div class="row academicsection">
+     <div class="head" style="font-size: 1.4rem;font-weight: 600;">ACADEMIC DETAILS</div>
+
+     <div class="col-sm-12 col-md-6">
+      
+      <div class="form-label" style="margin-top: 2rem;">Select your degree</div>
+      <div style="margin-top: 0.2rem;">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"  id="Btech">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Btech
+          </label>
+         </div>
+         <div style="margin-top: 0.2rem;">
+          <input class="form-check-input" type="radio" name="flexRadioDefault"  id="idD">
+            <label class="form-check-label" for="flexRadioDefault1">
+              IDD
+            </label>
+           </div>
+  
+
+       <div class="form-inputs" id="ah">
+            <label for="Ed" class="form-label">Institution</label>
+            <input type="text" class="form-control institute " placeholder="Enter here">
+       </div>
+       
+       <div class="form-inputs" id="ah">
+        <label for="Ed" class="form-label">Percentage</label>
+        <input type="text" class="form-control" id="prcntge" placeholder="Enter here">
+      </div>
+
+      <div class="form-inputs" id="ah">
+        <label for="Ed" class="form-label">Year of Completion</label>
+        <input type="text" class="form-control " id="yE" placeholder="Enter here">
+      </div>
+     
+      <div class="form-inputs" id="ed">
+        <label for="Ed" class="form-label" style="margin-top: 1.2rem;">Education(plus 2 level)</label>
+        <div class="edutitle">XII
+        <input type="text" class="form-control edtc" id="inputboard1"  placeholder="Board">
+        <input type="text" class="form-control edtc" id="inputyear1"  placeholder="Institute of passing">
+        <input type="text" class="form-control edtc" id="inpupercentage1"  placeholder="Percentage">
+        <input type="text" class="form-control edtc" id="inpupass1"  placeholder="Year of passing" style="margin-bottom: 0.4rem;">
+       </div>
+       <div class="edutitle">X
+        <input type="text" class="form-control edtc" id="inputborad"  placeholder="Board">
+        <input type="text" class="form-control edtc" id="inpuyear"  placeholder="Institute of passing">
+        <input type="text" class="form-control edtc" id="inpupercentage"  placeholder="Percentage">
+        <input type="text" class="form-control edtc" id="inpupass"  placeholder="Year of passing">
+       </div>
+       <!--<div class="container btn-co" id="e_button" style="text-align: center;">
+          <button class="btn button" id="ed_button">+</button>
+        </div>-->
+       </div>
+     
+
+      </div>
+     
+      <div class="col-sm-12 col-md-6">
+
+        <div id="chek">
+        <div class="hea">Do you want to display sem wise cgpa?</div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="yes">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+        </div>
+       </div>
+
+      
+
+       <div class="hear">Sem wise details</div>
+      <div class="seme" style="display: flex;margin: 1rem;"> 
+       <div class="semx">
+        <div class="form-inputs">
+          <input type="text" class="form-control c1"  placeholder="Sem1">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c3 "  placeholder="Sem3">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c5"  placeholder="Sem5">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c7"  placeholder="Sem7">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c9 "  placeholder="Sem9">
+        </div>
+
+       </div>
+
+      <div class="semx0">
+        <div class="form-inputs" >
+          <input type="text" class="form-control c2"  placeholder="Sem2">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c4" placeholder="Sem4">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c6"  placeholder="Sem6">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c8"  placeholder="Sem8">
+        </div>
+
+        <div class="form-inputs" >
+          <input type="text" class="form-control c10 "  placeholder="Sem10">
+        </div>
+      </div>
+
+    
+    </div>
+      
+      </div>
+
+
+
+    </div> 
+
+    
     <div class="container btn-co" style="text-align: center;">
       <button class="btn button2" id="gene">Generate CV</button>
     </div>
 
 </div>
+
+<!--<div style="margin: 2rem;">
+  <button class="btn button3" id="lastest" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+  </svg></button>
+</div>
+-->
 
 <!--Template-->
 
@@ -140,14 +268,104 @@
       <div class="acd">
       <div class="card-title acad_card text-center">ACADEMIC PROFILE</div>
   <div class="card" style="margin-bottom: 2px;padding: 0px;">
-  <div class="card-body" style="border-bottom: 4px solid rgb(127, 124, 124);">
+  <div class="card-body" style="border-bottom: 4px solid rgb(127, 124, 124);padding: 0;">
   
-        <ul id="acad-list">
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
+    <table class="table">
+      <thead style="background: #e3e3e3;">
+        <tr>
+          <th scope="col" class="thead10" style="width: 17%;">Degree/Certificate</th>
+          <th scope="col" class="thead0" style="width: 62%;">Institution</th>
+          <th scope="col" class="thead0">Percentage/CGPA</th>
+          <th scope="col" class="thead0">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row" style="text-align: center;" class="iddbte">IDD</td>
+          <td class="isnt" style="text-align: center;">Mark</td>
+          <td class="perc" style="text-align: center;">Otto</td>
+          <td class="yr" style="text-align: center;">@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table semdisp">
+        <thead style="background-color: #e3e3e3;">
+          <tr>
+            <th scope="col" id="se1" class="thead-0" style="border-left: 5px solid rgb(240, 242, 242);">Sem1</th>
+            <th scope="col" id="se2" class="thead-0">Sem2</th>
+            <th scope="col" id="se3" class="thead-0">Sem3</th>
+            <th scope="col" id="se4" class="thead-0">Sem4</th>
+            <th scope="col" id="se5" class="thead-0" >Sem5</th>
+            <th scope="col" id="se6" class="thead-0">Sem6</th>
+            <th scope="col" id="se7" class="thead-0">Sem7</th>
+           
+           <th scope="col" id="se8" class="thead-0">Sem8</th>
+          </tr>
+        </thead>
+        <tr class="semesters">
+           <td class="cfirst" style="text-align: center;"></td>
+          <td class="c11" style="text-align: center;"></td>
+          <td class="c12" style="text-align:center;"></td>
+          <td class="c13" style="text-align: center;"></td>
+          <th class="c14" style="text-align: center;"></th>
+          <td class="c15" style="text-align: center;"></td>
+          <td class="c16" style="text-align: center;"></td>
+           <td class="c17"  style="text-align: center;"></td>
+          
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table semdisp4">
+      <thead style="background-color: #e3e3e3;">
+        <tr>
+          <th scope="col"  class="thead-0" style="border-left: 5px solid rgb(240, 242, 242);">Sem1</th>
+          <th scope="col"  class="thead-0">Sem2</th>
+          <th scope="col"  class="thead-0">Sem3</th>
+          <th scope="col"  class="thead-0">Sem4</th>
+          <th scope="col"  class="thead-0" style="font-weight:600;">Sem5</th>
+          <th scope="col"  class="thead-0">Sem6</th>
+          <th scope="col"  class="thead-0">Sem7</th>
+         <th scope="col"  class="thead-0">Sem8</th>
+         <th scope="col" class="thead-0">Sem9</th>
+         <th scope="col"  class="thead-0 ">Sem10</th>
+        </tr>
+      </thead>
+      <tr class="semesters">
+         <td class="c22" style="text-align: center;"></td>
+        <td class="c23" style="text-align: center;"></td>
+        <td class="c24" style="text-align:center;"></td>
+        <td class="c25" style="text-align: center;"></td>
+        <th class="c26" style="text-align: center;"></th>
+        <td class="c27" style="text-align: center;"></td>
+        <td class="c28" style="text-align: center;"></td>
+         <td class="c29"  style="text-align: center;"></td>
+         <td class="c30" style="text-align: center;"></td>
+        <td class="c31" style="text-align: center;"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" style="text-align: center;width: 16%;font-weight: 400;" id="deg1">Degree/Certificate</th>
+          <th scope="col" style="text-align: center;width: 62%;font-weight: 400;" id="in1">Institution</th>
+          <th scope="col" style="text-align: center;font-weight: 400;width: 20%;" id="r1">Percentage/CGPA</th>
+          <th scope="col" style="text-align: center;font-weight: 400;" id="y1">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row" style="text-align: center;" id="deg"></td>
+          <td class="isnt" style="text-align: center;" id="inn"></td>
+          <td class="perc" style="text-align: center;" id="r"></td>
+          <td  style="text-align: center;" id="yre"></td>
+        </tr>
+      </tbody>
+    </table>
       
     </div>
   </div>
@@ -263,7 +481,6 @@
 <div class="container btn-co" style="text-align: center;">
   <button class="btn button2" id="last" style="display: none;">Print CV</button>
 </div>
-
 
 
  

@@ -151,15 +151,119 @@ body {
   padding: 2px;
 }
 
+.edtc {
+  margin-top: 0.6rem;
+}
+
 .acad_card {
   margin-top: 0px;
 }
 
 .scaling {
-  transform: scaleX(0.77);
+  transform: scaleX(0.8);
   margin-top: 1rem;
 }
 
 #IN-list {
   padding-left: 0rem;
 }
+
+.hea {
+  color: rgb(88, 85, 85);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#chek {
+  margin: 1rem;
+  margin-top: 1.4rem;
+}
+
+.hear {
+  color: rgb(86, 83, 83);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  display: none;
+}
+
+.semx {
+  display: none;
+}
+.semx0 {
+  display: none;
+}
+
+.semdisp {
+  display: none;
+}
+
+.semdisp4 {
+  display: none;
+}
+
+.display {
+  display: table;
+}
+
+.thead10 {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 800;
+  text-align: center;
+}
+.thead0 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 800;
+  text-align: center;
+}
+.table > :not(caption) > * > * {
+  padding: 0;
+}
+
+.thead-0 {
+  font-weight: 800;
+  text-align: center;
+  background: #e3e3e3;
+  border-bottom: transparent;
+  border-right: 5px solid rgb(240, 242, 242);
+}
+
+.thead-0 > :not(caption) > * > * {
+  background-color: transparent;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: none;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none;
+}
+
+.c9-d {
+  display: none;
+}
+
+.c9-dd {
+  display: block;
+}
+/*
+.button3 {
+  border-radius: 100%;
+  border: 1px solid blue;
+}
+.button3:hover {
+  cursor: pointer;
+}
+.copy {
+  display: none;
+}
+*/
