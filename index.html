@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--Form-->
+
+    <div class="container" id="input_f"> 
+        <div class="head">Resume Generator</div>
+        <p class="text-center p">By MAS</p>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="form-inputs">
+                <label for="Name" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="Inputname" placeholder="Enter here">
+              </div>
+
+            <div class="form-inputs">
+                <label for="contact" class="form-label">Your Contact</label>
+                <input type="text" class="form-control" id="Inputcontact0" placeholder="Enter mail">
+                <input type="text" class="form-control  mt-1" id="Inputcontact" placeholder="Enter contact">
+              </div>
+
+
+            <div class="form-inputs">
+                <label for="Address" class="form-label">Your Address</label>
+                <textarea type="text" class="form-control" id="Inputaddresses" rows="5" placeholder="Enter here">
+                </textarea>
+              </div>
+
+              <div class="form-inputs">
+                <label for="Address" class="form-label">Important Links</label>
+                <div class="form-inputssub">
+                    <label for="Address" class="form-labelsub">GitHub</label>
+                    <input type="text" class="form-control" id="Inputgit" rows="5" placeholder="Enter here">
+
+                  </div>
+                  <div class="form-inputssub">
+                    <label for="Address" class="form-labelsub">LinkedIn</label>
+                  <input type="text" class="form-control" id="Inputlinked" rows="5" placeholder="Enter here">
+
+                  </div>
+                  <div class="form-inputssub">
+                    <label for="Address" class="form-labelsub">Others</label>
+                    <input type="text" class="form-control" id="Inputother" rows="5" placeholder="Enter here">
+
+                  </div>
+              </div>
+         </div>
+
+        <div class="col-sm-12 col-md-6">
+
+          <div class="form-inputs" id="brief">
+            <label for="Qualities" class="form-label">Skills in brief</label>
+            <input type="text" class="form-control skillst" id="Inputskills" placeholder="Enter here">
+            <div class="container btn-co" style="text-align: center;" id="brief_button">
+              <button class="btn button" id="b_button">+</button>
+            </div>
+          </div>
+
+          <div class="form-inputs" id="project">
+            <label for="Pjs" class="form-label">Projects</label>
+            <input type="text" class="form-control projj" id="Inputprojects" placeholder="Enter here">
+            <div class="container btn-co" id="pro_button" style="text-align: center;">
+              <button class="btn button" id="project_button">+</button>
+            </div>
+           </div>
+
+           <div class="form-inputs" id="ed">
+            <label for="Ed" class="form-label" >Education</label>
+            <input type="text" class="form-control edtc" id="Inputeducation"  placeholder="Enter here">
+            <div class="container btn-co" id="e_button" style="text-align: center;">
+              <button class="btn button" id="ed_button">+</button>
+            </div>
+           </div>
+
+           <div class="form-inputs" id="is">
+             <br>
+            <label for="Ed" class="form-label">Internships</label>
+           
+            <input type="text" class="form-control interns" id="Inputinternships" placeholder="Enter Your company"> 
+            <input type="text" class=" form-work work-interns" id="Inputworkk" placeholder="Elaborate your work"> 
+          <!-- <textarea name="text" class="form-designation designation-interns" id="InputDEgination" cols="30" rows="10"></textarea> -->
+            
+
+            <div style="display: flex;" class="date">
+              <label for="Ed" class="col-form-label from">From</label>
+              <input type="text" class="form-control form-control-sm mt-1 ff" id="from">
+
+              <label for="Ed" class="col-form-label from-to">To</label>
+              <input type="text" class="form-control form-control-sm mt-1 too" id="to">
+           </div>
+
+            <div class="container btn-co" style="text-align: center;" id="i_button">
+              <button class="btn button" id="in_button">+</button>
+            </div>
+           </div>
+
+           <div class="form-inputs" id="ah">
+            <label for="Ed" class="form-label">Achievements</label>
+            <input type="text" class="form-control ai" id="Inputachieve" placeholder="Enter here">
+            <div class="container btn-co" style="text-align: center;" id="ac_button">
+              <button class="btn button" id="ah_button">+</button>
+            </div>
+           </div>
+
+        </div>
+    </div>
+    <div class="container btn-co" style="text-align: center;">
+      <button class="btn button2" id="gene">Generate CV</button>
+    </div>
+
+</div>
+
+
+  <!--Template-->
+
+<div class="container" id="templ" style="display: none;">
+
+  <div class="row" id="intr">
+
+    <div  class="col-sm-12 col-md-12 text-center">
+    <h1 style="font-size: 4rem" class="titles">WILL SMITH</h1>
+    </div>
+
+  </div>
+
+  <div class="row" id="cv">
+
+    <div  class="col-sm-4 col-md-4" id="personal">
+      <div id="links">
+       <div class="box"></div>
+       <div id="head">Skills</div>
+       <hr style="width: 3rem;height: 3.5px;">
+       <div>
+       <hr class="side">
+       <ul class="link-lists" id="skilllist">
+         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis</li>
+         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis </li>
+         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis </li> 
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda in reiciendis </li> 
+       </ul>
+      </div>
+     </div>
+
+     <div id="skills">
+      <div class="box"></div>
+      <div id="head2">Links</div>
+      <hr style="width: 3rem;height: 3.5px;">
+      <hr class="side">
+      <ul class="link-lists2">
+        <li id="git">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li id="linkedin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li id="otherss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+      </ul>
+
+    </div>
+
+    <div id="contacts">
+      <div class="box"></div>
+      <div id="head2">Contacts</div>
+      <hr style="width: 3rem;height: 3.5px;">
+      <hr class="side0">
+      <ul class="link-lists3">
+        <li id="ph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li id="mailed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+      </ul>
+
+    </div>
+    </div>
+
+
+   <div class="col-sm-8 col-md-8" id="prof">
+
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title edu_card">EDUCATION</h4>
+
+        <p class="card-text">
+          <ul id="ed-list">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="border: none;margin-top: 1rem;">
+      <div class="card-body">
+        <h4 class="card-title proj_card">PROJECTS</h4>
+
+        <p class="card-text">
+          <ul id="projlist">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="border: none;margin-top: 1rem;">
+      <div class="card-body">
+        <h4 class="card-title i_card">INTERNSHIPS</h4>
+
+        <p class="card-text">
+          <ul id="in-List">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+           </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+           </li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="border: none;margin-top: 1rem;">
+      <div class="card-body">
+        <h4 class="card-title ai_card">HONOURS AND ACHIEVEMENTS</h4>
+
+        <p class="card-text">
+          <ul id="ai-list">
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li class="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+   </div>
+  </div>
+
+  <div class="container btn-co" style="text-align: center;">
+    <button class="btn button2" id="last">Print CV</button>
+  </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./resume.js"></script>
+</body>
+</html> 
