@@ -203,7 +203,7 @@ in_button.addEventListener("click",()=>{
 
 
 
- 
+
   ah_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
@@ -234,7 +234,9 @@ in_button.addEventListener("click",()=>{
   })
 let templatek=0;
 let triggers=0;
+
 let bt=4;
+
 
 document.querySelector("#yes").addEventListener("click",()=>{
   triggers++;
@@ -246,13 +248,12 @@ document.querySelector("#Btech").addEventListener("click",()=>{
 })
 
 document.querySelector("#idD").addEventListener("click",()=>{
+
   bt=2;
  })
 
-document.querySelector("#yes").addEventListener("click",()=>{
-   
- 
 
+document.querySelector("#yes").addEventListener("click",()=>{
 
    if(triggers%2!=0)
    {
@@ -265,10 +266,12 @@ document.querySelector("#yes").addEventListener("click",()=>{
    hear.setAttribute("style","display:block;");
    semx0.setAttribute("style","display:inline;margin-left:1rem"); 
    semx.setAttribute("style","display:inline;");
+
    let c9=document.querySelector(".c9");
     c9.setAttribute("style","display:none;");
     let c10=document.querySelector(".c10");
     c10.setAttribute("style","display:none;");
+
    
    document.querySelector("#Btech").addEventListener("click",()=>{
      templatek=1;
@@ -286,7 +289,6 @@ document.querySelector("#yes").addEventListener("click",()=>{
     c10.setAttribute("style","display:inline;");
    })
 
-  
 
    if(bt==4)
    {
@@ -296,6 +298,7 @@ document.querySelector("#yes").addEventListener("click",()=>{
    let c10=document.querySelector(".c10");
    c10.setAttribute("style","display:none;");
    }
+
 
    if(bt==2)
    { 
@@ -555,7 +558,9 @@ last.addEventListener("click",()=>{
   html2pdf(ress,opt);
 })
 
+
 const lastest=document.querySelector("#lastest");
+
 lastest.addEventListener("click",()=>{
 
  document.querySelector("#input_f").setAttribute("style","display:visible;");
@@ -563,4 +568,6 @@ lastest.addEventListener("click",()=>{
  document.querySelector("#last").setAttribute("style","display:none;");
  lastest.setAttribute("style","display:none");
 
+
 })
+
