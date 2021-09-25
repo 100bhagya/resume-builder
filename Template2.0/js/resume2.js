@@ -554,7 +554,7 @@ last.addEventListener("click",()=>{
   ress.classList.add("scale");
   html2pdf(ress,opt);
 })
-/*
+
 const lastest=document.querySelector("#lastest");
 lastest.addEventListener("click",()=>{
 
@@ -563,4 +563,4 @@ lastest.addEventListener("click",()=>{
  document.querySelector("#last").setAttribute("style","display:none;");
  lastest.setAttribute("style","display:none");
 
-})*/
+})
