@@ -334,20 +334,20 @@ nos.addEventListener("click",()=>{
 const generate= document.getElementById("gene");
 generate.addEventListener("click",()=>{
 
-  let acad=document.getElementsByClassName("edtc");
-  let st12=''
+  // let acad=document.getElementsByClassName("edtc");
+  // let st12=''
 
-  for(let e of acad)
-  { if(e.value == '')break;
-    st12+=`<li> ${e.value} </li>`;
+  // for(let e of acad)
+  // { if(e.value == '')break;
+  //   st12+=`<li> ${e.value} </li>`;
 
-  }
-  if(st12==''){
-    document.querySelector(".acd").setAttribute("style","display:none;");
-  }
-  else{
-  document.querySelector("#acad-list").innerHTML=st12;
-  } 
+  // }
+  // if(st12==''){
+  //   document.querySelector(".acd").setAttribute("style","display:none;");
+  // }
+  // else{
+  // document.querySelector("#acad-list").innerHTML=st12;
+  // } 
 
   
  
@@ -372,8 +372,8 @@ generate.addEventListener("click",()=>{
  document.querySelector(".c27").innerHTML=document.querySelector(".c6").value;
  document.querySelector(".c28").innerHTML=document.querySelector(".c7").value;
  document.querySelector(".c29").innerHTML=document.querySelector(".c8").value;
- document.querySelector(".c30").innerHTML=document.querySelector(".c8").value;
- document.querySelector(".c31").innerHTML=document.querySelector(".c8").value;
+ document.querySelector(".c30").innerHTML=document.querySelector(".c9").value;
+ document.querySelector(".c31").innerHTML=document.querySelector(".c10").value;
   
   
  
@@ -381,14 +381,14 @@ generate.addEventListener("click",()=>{
   let strings=''
 
   for(let e of proj)
-  { if(e.value == '')break;
+  { if(e.value != '')
     strings+=`<li> ${e.value} </li>`;
-
   }
   if(strings==''){
     document.querySelector(".projects").setAttribute("style","display:none;");
   }
   else{
+  document.querySelector(".projects").setAttribute("style","display:visible;");  
   document.querySelector("#PJ-list").innerHTML=strings;
   }
 
@@ -396,14 +396,16 @@ generate.addEventListener("click",()=>{
   let st6=''
 
   for(let e of skillst)
-  { if(e.value == '')break;
+  { if(e.value != '')
     st6+=`<li> ${e.value} </li>`;
 
   }
+
   if(st6 == ''){
     document.querySelector(".skl").setAttribute("style","display:none;");
   }
   else{
+    document.querySelector(".skl").setAttribute("style","display:visible;");
   document.querySelector("#skil-list").innerHTML=st6;
   }
   
@@ -448,13 +450,14 @@ k++;
    document.querySelector(".int1").setAttribute("style","display:none;");
  }
  else{
+  document.querySelector(".int1").setAttribute("style","display:visible;");   
  document.querySelector("#IN-list").innerHTML=string1;
  }
   let ai=document.getElementsByClassName("ai");
   let st4=''
 
   for(let e of ai)
-  { if(e.value=='')break;
+  { if(e.value!='')
     st4+=`<li> ${e.value} </li>`;
 
   }
@@ -462,20 +465,24 @@ k++;
     document.querySelector(".honours").setAttribute("style","display:none;");
   }
   else{
+    document.querySelector(".honours").setAttribute("style","display:visible;");    
   document.querySelector("#AC-list").innerHTML=st4;
   }
   let res=document.getElementsByClassName("res");
   let st0=''
 
   for(let e of res)
-  {  if(e.value=='')break;
+  {  if(e.value!='')
     st0+=`<li> ${e.value} </li>`;
 
   }
   if(st0==''){
     document.querySelector(".por").setAttribute("style","display:none;");
   }
+  else{
+  document.querySelector(".por").setAttribute("style","display:visible;");  
   document.querySelector("#P-list").innerHTML=st0;
+  }
   let str88 = document.getElementById("Inputaddres").value;
   if(str88!=''){
   document.querySelector(".address").innerHTML= "Address : " + str88;
@@ -516,24 +523,32 @@ k++;
  {
    document.querySelector(".iddbte").innerHTML="Btech";
  }
- if(bt==0)
+ if(bt==2)
  {
    document.querySelector(".iddbte").innerHTML="IDD";
  }
- if(templatek==1)
+ if((templatek==1) &&(triggers%2!=0))
  { 
-   
+  let tablesem4=document.querySelector(".semdisp4");
+  tablesem4.setAttribute("style","display:none;");
    let tablesem=document.querySelector(".semdisp");
-   tablesem.classList.add("display");
+   tablesem.setAttribute("style","display:table;");
   
  }
 
- else if(templatek==6)
+ else if((templatek==6) && (triggers%2!=0))
   { 
     let tablesem4=document.querySelector(".semdisp4");
-    tablesem4.classList.add("display");
+    tablesem4.setAttribute("style","display:table;");
+    let tablesem=document.querySelector(".semdisp");
+    tablesem.setAttribute("style","display:none;");
     
-    
+  }
+  else if(triggers%2==0){
+    let tablesem=document.querySelector(".semdisp");
+    tablesem.setAttribute("style","display:none;");
+    let tablesem4=document.querySelector(".semdisp4");
+    tablesem4.setAttribute("style","display:none;");    
   }
 
   const button3=document.querySelector(".button3");
