@@ -488,6 +488,11 @@ k++;
   document.querySelector(".address").innerHTML= "Address : " + str88;
   }
 
+
+  document.getElementById("gitT").innerHTML = document.getElementById("Inputgit").value;
+  document.getElementById("linkedT").innerHTML = document.getElementById("Inputlinked").value;
+  document.getElementById("portfolioT").innerHTML = document.getElementById("Inputother").value;
+
   /*document.querySelector(".contact").innerHTML=document.getElementById("Inputcontact0").value;
   
  */ 
