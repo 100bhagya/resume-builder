@@ -27,7 +27,7 @@
         <div class="col-sm-12 col-md-6">
             <div class="form-inputs">
                 <label for="Name" class="form-label">Your name</label>
-                <input type="text" class="form-control" id="Inputname" placeholder="Enter here">
+                <input type="text" class="form-control" id="name" placeholder="Enter here">
               </div>
 
             <div class="form-inputs">
@@ -169,9 +169,6 @@
         <input type="text" class="form-control edtc" id="inpupercentage"  placeholder="Percentage">
         <input type="text" class="form-control edtc" id="inpupass"  placeholder="Year of passing">
        </div>
-       <!--<div class="container btn-co" id="e_button" style="text-align: center;">
-          <button class="btn button" id="ed_button">+</button>
-        </div>-->
        </div>
      
 
@@ -252,17 +249,16 @@
 
 </div>
 
-<div style="margin: 2rem;">
-  <button class="btn button3" id="lastest" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-  </svg></button>
-</div>
+
 
 <!--Template-->
 
+
+<div class="container" id="main">
+<div class="container" id="names_"></div>
 <div class="container" id="temp2" class="resume-template-2">
-
-
+ 
+  
   <div class="row" >
     <div class="col-sm-12 col-sm-12">
       <div class="acd">
@@ -281,7 +277,7 @@
       </thead>
       <tbody>
         <tr>
-          <td scope="row" style="text-align: center;" class="iddbte">IDD</td>
+          <td scope="row" style="text-align: center;" class="iddbtech" id="btechsid"></td>
           <td class="isnt" style="text-align: center;">Mark</td>
           <td class="perc" style="text-align: center;">Otto</td>
           <td class="yr" style="text-align: center;">@mdo</td>
@@ -308,7 +304,7 @@
           <td class="c11" style="text-align: center;"></td>
           <td class="c12" style="text-align:center;"></td>
           <td class="c13" style="text-align: center;"></td>
-          <th class="c14" style="text-align: center;"></th>
+          <th class="c14" style="font-weight:400;text-align:center;"></th>
           <td class="c15" style="text-align: center;"></td>
           <td class="c16" style="text-align: center;"></td>
            <td class="c17"  style="text-align: center;"></td>
@@ -324,7 +320,7 @@
           <th scope="col"  class="thead-0">Sem2</th>
           <th scope="col"  class="thead-0">Sem3</th>
           <th scope="col"  class="thead-0">Sem4</th>
-          <th scope="col"  class="thead-0" style="font-weight:800;">Sem5</th>
+          <th scope="col"  class="thead-0">Sem5</th>
           <th scope="col"  class="thead-0">Sem6</th>
           <th scope="col"  class="thead-0">Sem7</th>
          <th scope="col"  class="thead-0">Sem8</th>
@@ -359,10 +355,10 @@
       </thead>
       <tbody>
         <tr>
-           <td scope="row" style="text-align: center;" id="deg">Btech</td>
-          <td class="isnt" style="text-align: center;" id="inn"></td>
-          <td class="perc" style="text-align: center;" id="r"></td>
-          <td  style="text-align: center;" id="yre"></td>
+           <td scope="row" style="text-align: center;" id="deg"></td>
+          <td class="isnt" style="text-align: center;padding-bottom: 7px;" id="inn"></td>
+          <td class="perc" style="text-align: center;padding-bottom: 7px;" id="r"></td>
+          <td  style="text-align: center;padding-bottom: 7px;" id="yre"></td>
         </tr>
       </tbody>
     </table>
@@ -497,11 +493,16 @@
 
 
 </div>
+</div>
+</div>
 
 <div class="container btn-co" style="text-align: center;">
   <button class="btn button2" id="last" style="display: none;">Print CV</button>
 </div>
 
+<div style="text-align: center;margin-top: 2rem;">
+  <button class="btn button3" id="lastest" style="display: none;">BACK</button>
+</div>
 
  
 
