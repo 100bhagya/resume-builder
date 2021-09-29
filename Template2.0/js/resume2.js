@@ -1,14 +1,14 @@
-const b_button=document.querySelector("#b_button");
-const in_button=document.querySelector("#in_button");
+const skill_button=document.querySelector("#b_button");
+const internship_button=document.querySelector("#in_button");
 const ed_button=document.querySelector("#ed_button");
 const project_button=document.querySelector("#project_button");
-const respon_button=document.querySelector("#respon_button");
-const ah_button=document.querySelector("#ah_button");
+const responsibility_button=document.querySelector("#respon_button");
+const achieve_button=document.querySelector("#ah_button");
 
 
 
 
-b_button.addEventListener("click",funct= ()=>{
+skill_button.addEventListener("click",funct= ()=>{
 
   let newinput=document.createElement("input");
   newinput.classList.add("form-control");
@@ -41,7 +41,7 @@ b_button.addEventListener("click",funct= ()=>{
 
 
 
-in_button.addEventListener("click",()=>{
+internship_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
 
@@ -60,39 +60,39 @@ in_button.addEventListener("click",()=>{
      const date=document.createElement("div");
      date.classList.add("date");
 
-     const label=document.createElement("label");
-     label.classList.add("col-form-label");
-     label.classList.add("from");
-     label.innerHTML="From";
+     const froms=document.createElement("label");
+     froms.classList.add("col-form-label");
+     froms.classList.add("from");
+     froms.innerHTML="From";
 
 
-     const ipt=document.createElement("input");
-     ipt.classList.add("form-control");
-     ipt.classList.add("form-control-sm");
-     ipt.classList.add("mt-1");
-     ipt.classList.add("ff");
+     const from_ipt=document.createElement("input");
+     from_ipt.classList.add("form-control");
+     from_ipt.classList.add("form-control-sm");
+     from_ipt.classList.add("mt-1");
+     from_ipt.classList.add("ff");
 
 
-     const labe=document.createElement("label");
-     labe.classList.add("col-form-label");
-     labe.classList.add("from-to");
-     labe.innerHTML="To";
+     const to=document.createElement("label");
+     to.classList.add("col-form-label");
+     to.classList.add("from-to");
+     to.innerHTML="To";
 
-     const ip=document.createElement("input");
-     ip.classList.add("form-control");
-     ip.classList.add("form-control-sm");
-     ip.classList.add("mt-1");
-     ip.classList.add("too");
+     const to_ipt=document.createElement("input");
+     to_ipt.classList.add("form-control");
+     to_ipt.classList.add("form-control-sm");
+     to_ipt.classList.add("mt-1");
+     to_ipt.classList.add("too");
 
 
 
      date.setAttribute("style","display:flex;");
 
 
-     date.appendChild(label);
-     date.appendChild(ipt);
-     date.appendChild(labe);
-     date.appendChild(ip);
+     date.appendChild(froms);
+     date.appendChild(from_ipt);
+     date.appendChild(to);
+     date.appendChild(to_ipt);
 
      
 
@@ -114,36 +114,9 @@ in_button.addEventListener("click",()=>{
     })
 
   })
- /* ed_button.addEventListener("click",()=>{
-
-    let newinput=document.createElement("input");
-    newinput.classList.add("form-control");
-    newinput.classList.add("edtc");
-     newinput.setAttribute("placeholder","Enter here");
-    newinput.classList.add("mt-2");
-    let msg=document.createElement("button");
-    msg.classList.add("form-text");
-    msg.classList.add("button-sub");
-     msg.innerText="-";
-
-
-    let before=document.querySelector("#e_button");
-    let after=document.querySelector("#ed");
-
-
-    after.insertBefore(newinput,before);
-    after.insertBefore(msg,before);
-
-
-    msg.addEventListener("click",()=>{
-      newinput.remove();
-      msg.remove();
-    })
-
-
-  })*/
+ 
   
-  respon_button.addEventListener("click",()=>{
+  responsibility_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
     newinput.classList.add("form-control");
@@ -204,7 +177,7 @@ in_button.addEventListener("click",()=>{
 
 
 
-  ah_button.addEventListener("click",()=>{
+  achieve_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
     newinput.classList.add("ai");
@@ -274,7 +247,6 @@ document.querySelector("#yes").addEventListener("click",()=>{
 
    
    document.querySelector("#Btech").addEventListener("click",()=>{
-     templatek=1;
     let c9=document.querySelector(".c9");
     c9.setAttribute("style","display:none;");
     let c10=document.querySelector(".c10");
@@ -283,7 +255,6 @@ document.querySelector("#yes").addEventListener("click",()=>{
 
    document.querySelector("#idD").addEventListener("click",()=>{
     let c9=document.querySelector(".c9");
-    templatek=6;
     c9.setAttribute("style","display:inline;");
     let c10=document.querySelector(".c10");
     c10.setAttribute("style","display:inline;");
@@ -292,7 +263,6 @@ document.querySelector("#yes").addEventListener("click",()=>{
 
    if(bt==4)
    {
-   templatek=1;
    let c9=document.querySelector(".c9");
    c9.setAttribute("style","display:none;");
    let c10=document.querySelector(".c10");
@@ -302,7 +272,6 @@ document.querySelector("#yes").addEventListener("click",()=>{
 
    if(bt==2)
    { 
-     templatek=6;
     let c9=document.querySelector(".c9");
    c9.setAttribute("style","display:inline;");
    let c10=document.querySelector(".c10");
@@ -333,21 +302,6 @@ nos.addEventListener("click",()=>{
 
 const generate= document.getElementById("gene");
 generate.addEventListener("click",()=>{
-
-  // let acad=document.getElementsByClassName("edtc");
-  // let st12=''
-
-  // for(let e of acad)
-  // { if(e.value == '')break;
-  //   st12+=`<li> ${e.value} </li>`;
-
-  // }
-  // if(st12==''){
-  //   document.querySelector(".acd").setAttribute("style","display:none;");
-  // }
-  // else{
-  // document.querySelector("#acad-list").innerHTML=st12;
-  // } 
 
   
  
@@ -392,6 +346,8 @@ generate.addEventListener("click",()=>{
   document.querySelector("#PJ-list").innerHTML=strings;
   }
 
+  document.querySelector("#names_").innerHTML=document.querySelector("#name").value;
+
   let skillst=document.getElementsByClassName("skillst");
   let st6=''
 
@@ -410,7 +366,7 @@ generate.addEventListener("click",()=>{
   }
   
   let int=document.getElementsByClassName("interns");
- // let st='';
+ 
  const st = [];
  let k = 0 ;
   for(let e of int)
@@ -418,9 +374,9 @@ generate.addEventListener("click",()=>{
     st[k]=` ${e.value} `;
 k++;
   }
- // document.querySelector("#IN-list").innerHTML=st;
+ 
   let fr = document.getElementsByClassName("ff");
- // let str1 =''
+
   const str1 =[];
   let i=0;
  for(let e of fr){
@@ -429,16 +385,16 @@ k++;
  i++;
   }
 
-  //document.querySelector("#F-list").innerHTML=str1;
-  let to = document.getElementsByClassName("too");
+
+  let to2 = document.getElementsByClassName("too");
   const str2 =[];
   i=0;
-  for(let e of to){
+  for(let e of to2){
     if(e.value=='')break;
     str2[i]= ` ${e.value} `;
     i++;
   }
- // document.querySelector("#T-list").innerHTML=str2;
+ 
  let string1='';
  for(let j=0;j<k;j++)
  { 
@@ -493,9 +449,7 @@ k++;
   document.getElementById("linkedT").innerHTML = document.getElementById("Inputlinked").value;
   document.getElementById("portfolioT").innerHTML = document.getElementById("Inputother").value;
 
-  /*document.querySelector(".contact").innerHTML=document.getElementById("Inputcontact0").value;
-  
- */ 
+
  let str87=document.getElementById("Inputcontact0").value;
  let str4="Contact : ";
  let str_f=str4+str87;
@@ -504,6 +458,7 @@ k++;
  document.querySelector(".contact").innerHTML=str_f;
   }
  document.querySelector("#input_f").setAttribute("style","display:none;");
+ document.querySelector("#main").setAttribute("style","display:block;");
  document.querySelector("#temp2").setAttribute("style","display:block;");
  last.setAttribute("style","display:visible;");
  let element=document.getElementById("body")
@@ -523,17 +478,19 @@ k++;
  
  let temp=document.getElementById("temp2");
  temp.classList.add("scaling");
-  
+
  if(bt==4)
  {
-   document.querySelector(".iddbte").innerHTML="Btech";
+ document.querySelector("#btechsid").innerHTML="Btech";
  }
  if(bt==2)
  {
-   document.querySelector(".iddbte").innerHTML="IDD";
+ document.querySelector("#btechsid").innerHTML="IDD"; 
  }
- if((templatek==1) &&(triggers%2!=0))
+ 
+ if((bt==4) &&(triggers%2!=0))
  { 
+ 
   let tablesem4=document.querySelector(".semdisp4");
   tablesem4.setAttribute("style","display:none;");
    let tablesem=document.querySelector(".semdisp");
@@ -541,8 +498,9 @@ k++;
   
  }
 
- else if((templatek==6) && (triggers%2!=0))
+ else if((bt==2) && (triggers%2!=0))
   { 
+    
     let tablesem4=document.querySelector(".semdisp4");
     tablesem4.setAttribute("style","display:table;");
     let tablesem=document.querySelector(".semdisp");
@@ -562,7 +520,7 @@ k++;
 );
 const last=document.querySelector("#last");
 
-let ress=document.querySelector("#temp2");
+let ress=document.querySelector("#main");
 
 let opt = {
   margin:       0,
@@ -584,6 +542,7 @@ const lastest=document.querySelector("#lastest");
 lastest.addEventListener("click",()=>{
 
  document.querySelector("#input_f").setAttribute("style","display:visible;");
+ document.querySelector("#main").setAttribute("style","display:none;");
  document.querySelector("#temp2").setAttribute("style","display:none;");
  document.querySelector("#last").setAttribute("style","display:none;");
  lastest.setAttribute("style","display:none");
