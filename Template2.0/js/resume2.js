@@ -1,4 +1,5 @@
 const skill_button=document.querySelector("#b_button");
+const intern_button=document.querySelector("#b1_button");
 const internship_button=document.querySelector("#in_button");
 const ed_button=document.querySelector("#ed_button");
 const project_button=document.querySelector("#project_button");
@@ -38,10 +39,40 @@ skill_button.addEventListener("click",funct= ()=>{
 
 
 });
+intern_button.addEventListener("click",funct= ()=>{
 
+  let newinput1=document.createElement("input");
+  newinput1.classList.add("form-control");
+  newinput1.classList.add("form-work");
+  newinput1.setAttribute("placeholder","Elaborate your work");
+  newinput1.classList.add("mt-2");
+  newinput1.classList.add("sub");
+  let msg1=document.createElement("button");
+  msg1.classList.add("form-text");
+  msg1.classList.add("button-sub");
+  msg1.innerText="-";
+
+
+
+  let before=document.querySelector("#br_button");
+  let after=document.querySelector("#extra");
+
+
+  after.insertBefore(newinput1,before);
+
+  after.insertBefore(msg1,before);
+
+ msg1.addEventListener("click",()=>{
+    newinput1.remove();
+    msg1.remove();
+  })
+
+
+});
 
 
 internship_button.addEventListener("click",()=>{
+ 
 
     let newinput=document.createElement("input");
 
@@ -49,6 +80,18 @@ internship_button.addEventListener("click",()=>{
     newinput.classList.add("interns");
     newinput.setAttribute("placeholder","Enter here");
     newinput.classList.add("mt-2");
+
+
+    let input=document.createElement("input");
+    input.classList.add("form-work");
+    input.classList.add("form-control");
+    input.setAttribute("placeholder","Elaborate your work");
+    input.classList.add("mt-2");
+
+  
+
+    
+
     let msg=document.createElement("button");
     msg.classList.add("form-text");
     msg.classList.add("button-sub");
@@ -104,12 +147,14 @@ internship_button.addEventListener("click",()=>{
 
 
     after.insertBefore(newinput,before);
+    after.insertBefore(input,before);
     after.insertBefore(date,before);
     after.insertBefore(msg,before);
 
     msg.addEventListener("click",()=>{
       date.remove();
       newinput.remove();
+      input.remove();
       msg.remove();
     })
 
@@ -305,29 +350,29 @@ generate.addEventListener("click",()=>{
 
   
  
- document.querySelector(".isnt").innerHTML=markuptext(document.querySelector(".institute").value,"*","strong");
- document.querySelector(".perc").innerHTML=markuptext(document.querySelector("#prcntge").value,"*","strong");
- document.querySelector(".yr").innerHTML=markuptext(document.querySelector("#yE").value,"*","strong");
+ document.querySelector(".isnt").innerHTML=document.querySelector(".institute").value;
+ document.querySelector(".perc").innerHTML=document.querySelector("#prcntge").value;
+ document.querySelector(".yr").innerHTML=document.querySelector("#yE").value;
 
- document.querySelector(".cfirst").innerHTML=markuptext(document.querySelector(".c1").value,"*","strong");
- document.querySelector(".c11").innerHTML=markuptext(document.querySelector(".c2").value,"*","strong");
- document.querySelector(".c12").innerHTML=markuptext(document.querySelector(".c3").value,"*","strong");
- document.querySelector(".c13").innerHTML=markuptext(document.querySelector(".c4").value,"*","strong");
- document.querySelector(".c14").innerHTML=markuptext(document.querySelector(".c5").value,"*","strong");
- document.querySelector(".c15").innerHTML=markuptext(document.querySelector(".c6").value,"*","strong");
- document.querySelector(".c16").innerHTML=markuptext(document.querySelector(".c7").value,"*","strong");
- document.querySelector(".c17").innerHTML=markuptext(document.querySelector(".c8").value,"*","strong");
+ document.querySelector(".cfirst").innerHTML=document.querySelector(".c1").value;
+ document.querySelector(".c11").innerHTML=document.querySelector(".c2").value;
+ document.querySelector(".c12").innerHTML=document.querySelector(".c3").value;
+ document.querySelector(".c13").innerHTML=document.querySelector(".c4").value;
+ document.querySelector(".c14").innerHTML=document.querySelector(".c5").value;
+ document.querySelector(".c15").innerHTML=document.querySelector(".c6").value;
+ document.querySelector(".c16").innerHTML=document.querySelector(".c7").value;
+ document.querySelector(".c17").innerHTML=document.querySelector(".c8").value;
  
- document.querySelector(".c22").innerHTML=markuptext(document.querySelector(".c1").value,"*","strong");
- document.querySelector(".c23").innerHTML=markuptext(document.querySelector(".c2").value,"*","strong");
- document.querySelector(".c24").innerHTML=markuptext(document.querySelector(".c3").value,"*","strong");
- document.querySelector(".c25").innerHTML=markuptext(document.querySelector(".c4").value,"*","strong");
- document.querySelector(".c26").innerHTML=markuptext(document.querySelector(".c5").value,"*","strong");
- document.querySelector(".c27").innerHTML=markuptext(document.querySelector(".c6").value,"*","strong");
- document.querySelector(".c28").innerHTML=markuptext(document.querySelector(".c7").value,"*","strong");
- document.querySelector(".c29").innerHTML=markuptext(document.querySelector(".c8").value,"*","strong");
- document.querySelector(".c30").innerHTML=markuptext(document.querySelector(".c9").value,"*","strong");
- document.querySelector(".c31").innerHTML=markuptext(document.querySelector(".c10").value,"*","strong");
+ document.querySelector(".c22").innerHTML=document.querySelector(".c1").value;
+ document.querySelector(".c23").innerHTML=document.querySelector(".c2").value;
+ document.querySelector(".c24").innerHTML=document.querySelector(".c3").value;
+ document.querySelector(".c25").innerHTML=document.querySelector(".c4").value;
+ document.querySelector(".c26").innerHTML=document.querySelector(".c5").value;
+ document.querySelector(".c27").innerHTML=document.querySelector(".c6").value;
+ document.querySelector(".c28").innerHTML=document.querySelector(".c7").value;
+ document.querySelector(".c29").innerHTML=document.querySelector(".c8").value;
+ document.querySelector(".c30").innerHTML=document.querySelector(".c9").value;
+ document.querySelector(".c31").innerHTML=document.querySelector(".c10").value;
   
   
  
@@ -342,12 +387,13 @@ generate.addEventListener("click",()=>{
     document.querySelector(".projects").setAttribute("style","display:none;");
   }
   else{
-  document.querySelector(".projects").setAttribute("style","display:visible;"); 
-  strings = markuptext(strings,"*","strong"); 
+  document.querySelector(".projects").setAttribute("style","display:visible;");  
   document.querySelector("#PJ-list").innerHTML=strings;
   }
 
   document.querySelector("#names_").innerHTML=document.querySelector("#name").value;
+
+
 
   let skillst=document.getElementsByClassName("skillst");
   let st6=''
@@ -357,14 +403,34 @@ generate.addEventListener("click",()=>{
     st6+=`<li> ${e.value} </li>`;
 
   }
+
   if(st6 == ''){
     document.querySelector(".skl").setAttribute("style","display:none;");
   }
   else{
     document.querySelector(".skl").setAttribute("style","display:visible;");
-    st6 = markuptext(st6,"*","strong");
   document.querySelector("#skil-list").innerHTML=st6;
   }
+
+
+// -----i edited----
+// let int1=document.getElementsByClassName("form-work ");
+//   let strings=''
+
+//   for(let x of int1)
+//   { if(x.value != '')
+//     string+=`<li> ${x.value} </li>`;
+//   }
+//   if(string==''){
+//     document.querySelector(".int1").setAttribute("style","display:none;");
+//   }
+//   else{
+//   document.querySelector(".int1").setAttribute("style","display:visible;");  
+//   document.querySelector("#IN-list").innerHTML=strings;
+//   }
+
+// --------i edited
+
   
   let int=document.getElementsByClassName("interns");
  
@@ -373,8 +439,22 @@ generate.addEventListener("click",()=>{
   for(let e of int)
   { if(e.value=='')break;
     st[k]=` ${e.value} `;
-k++;
+   k++;
   }
+//  ------i edited------
+  let work=document.getElementsByClassName("form-work");
+ 
+ const st1 = [];
+ let l = 0 ;
+  for(let f of work)
+  { if(f.value=='')break;
+    st1[l]=` ${f.value} `;
+  l++;
+  }
+
+
+  
+  
  
   let fr = document.getElementsByClassName("ff");
 
@@ -400,15 +480,16 @@ k++;
  for(let j=0;j<k;j++)
  { 
    string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
+   
    string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
    string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
+   string1+=`<p>`+st1[j]+`</p>`;
  }
  if(string1==''){
    document.querySelector(".int1").setAttribute("style","display:none;");
  }
  else{
   document.querySelector(".int1").setAttribute("style","display:visible;");   
-  string1 = markuptext(string1,"*","strong");
  document.querySelector("#IN-list").innerHTML=string1;
  }
   let ai=document.getElementsByClassName("ai");
@@ -423,8 +504,7 @@ k++;
     document.querySelector(".honours").setAttribute("style","display:none;");
   }
   else{
-    document.querySelector(".honours").setAttribute("style","display:visible;"); 
-    st4 = markuptext(st4,"*","strong");   
+    document.querySelector(".honours").setAttribute("style","display:visible;");    
   document.querySelector("#AC-list").innerHTML=st4;
   }
   let res=document.getElementsByClassName("res");
@@ -439,8 +519,7 @@ k++;
     document.querySelector(".por").setAttribute("style","display:none;");
   }
   else{
-  document.querySelector(".por").setAttribute("style","display:visible;"); 
-  st0 = markuptext(st0,"*","strong"); 
+  document.querySelector(".por").setAttribute("style","display:visible;");  
   document.querySelector("#P-list").innerHTML=st0;
   }
   let str88 = document.getElementById("Inputaddres").value;
@@ -459,7 +538,6 @@ k++;
  let str_f=str4+str87;
   
   if(str87!=''){
-    str_f = markuptext(str_f,"*","strong");
  document.querySelector(".contact").innerHTML=str_f;
   }
  document.querySelector("#input_f").setAttribute("style","display:none;");
@@ -555,45 +633,3 @@ lastest.addEventListener("click",()=>{
 
 })
 
-function markuptext(text,identifier,htmltag)
-{
-    var array = text.split(identifier);
-    var previous = "";
-    const l1 = array.length;
-    console.log(l1);
-    var previous_i;
-    if(l1%2 == 0){
-      //console.log(l1);
-      array[eval(l1-1)]= "*"+array[eval(l1-1)];
-    }
-    for (i = 0; i < array.length; i++) {
-        if (i % 2)
-        { 
-           //odd
-        }
-        else if (i!=0)
-        {
-            previous_i = eval(i-1);
-            var l = previous.length;
-            if(previous[0]!=" " && previous[l-1]!=" ")
-            array[previous_i] = "<"+htmltag+">"+previous+"</"+htmltag+">";
-            else if(previous[0]==" " && previous[l-1]==" ")
-            {array[previous_i]= "* " + previous+ " *";
-            }
-            else if(previous[0]==" "){
-              array[previous_i]= '* '+previous+"*";
-            }
-            else{
-              array[previous_i]= "*"+previous+" *";
-            }
-        }
-        previous = array[i];
-    }
- //   console.log(l1);
-   
-    var newtext = "";
-    for (i = 0; i < array.length; i++) {
-        newtext += array[i];
-    }
-    return newtext;
-}
