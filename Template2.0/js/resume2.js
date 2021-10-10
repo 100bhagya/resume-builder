@@ -305,29 +305,29 @@ generate.addEventListener("click",()=>{
 
   
  
- document.querySelector(".isnt").innerHTML=markuptext(document.querySelector(".institute").value,"*","strong");
- document.querySelector(".perc").innerHTML=markuptext(document.querySelector("#prcntge").value,"*","strong");
- document.querySelector(".yr").innerHTML=markuptext(document.querySelector("#yE").value,"*","strong");
+ document.querySelector(".isnt").innerHTML=markuptext2(markuptext(document.querySelector(".institute").value,"*","strong"),"_","em");
+ document.querySelector(".perc").innerHTML=markuptext2(markuptext(document.querySelector("#prcntge").value,"*","strong"),"_","em");
+ document.querySelector(".yr").innerHTML=markuptext2(markuptext(document.querySelector("#yE").value,"*","strong"),"_","em");
 
- document.querySelector(".cfirst").innerHTML=markuptext(document.querySelector(".c1").value,"*","strong");
- document.querySelector(".c11").innerHTML=markuptext(document.querySelector(".c2").value,"*","strong");
- document.querySelector(".c12").innerHTML=markuptext(document.querySelector(".c3").value,"*","strong");
- document.querySelector(".c13").innerHTML=markuptext(document.querySelector(".c4").value,"*","strong");
- document.querySelector(".c14").innerHTML=markuptext(document.querySelector(".c5").value,"*","strong");
- document.querySelector(".c15").innerHTML=markuptext(document.querySelector(".c6").value,"*","strong");
- document.querySelector(".c16").innerHTML=markuptext(document.querySelector(".c7").value,"*","strong");
- document.querySelector(".c17").innerHTML=markuptext(document.querySelector(".c8").value,"*","strong");
+ document.querySelector(".cfirst").innerHTML=markuptext2(markuptext(document.querySelector(".c1").value,"*","strong"),"_","em");
+ document.querySelector(".c11").innerHTML=markuptext2(markuptext(document.querySelector(".c2").value,"*","strong"),"_","em");
+ document.querySelector(".c12").innerHTML=markuptext2(markuptext(document.querySelector(".c3").value,"*","strong"),"_","em");
+ document.querySelector(".c13").innerHTML=markuptext2(markuptext(document.querySelector(".c4").value,"*","strong"),"_","em");
+ document.querySelector(".c14").innerHTML=markuptext2(markuptext(document.querySelector(".c5").value,"*","strong"),"_","em");
+ document.querySelector(".c15").innerHTML=markuptext2(markuptext(document.querySelector(".c6").value,"*","strong"),"_","em");
+ document.querySelector(".c16").innerHTML=markuptext2(markuptext(document.querySelector(".c7").value,"*","strong"),"_","em");
+ document.querySelector(".c17").innerHTML=markuptext2(markuptext(document.querySelector(".c8").value,"*","strong"),"_","em");
  
- document.querySelector(".c22").innerHTML=markuptext(document.querySelector(".c1").value,"*","strong");
- document.querySelector(".c23").innerHTML=markuptext(document.querySelector(".c2").value,"*","strong");
- document.querySelector(".c24").innerHTML=markuptext(document.querySelector(".c3").value,"*","strong");
- document.querySelector(".c25").innerHTML=markuptext(document.querySelector(".c4").value,"*","strong");
- document.querySelector(".c26").innerHTML=markuptext(document.querySelector(".c5").value,"*","strong");
- document.querySelector(".c27").innerHTML=markuptext(document.querySelector(".c6").value,"*","strong");
- document.querySelector(".c28").innerHTML=markuptext(document.querySelector(".c7").value,"*","strong");
- document.querySelector(".c29").innerHTML=markuptext(document.querySelector(".c8").value,"*","strong");
- document.querySelector(".c30").innerHTML=markuptext(document.querySelector(".c9").value,"*","strong");
- document.querySelector(".c31").innerHTML=markuptext(document.querySelector(".c10").value,"*","strong");
+ document.querySelector(".c22").innerHTML=markuptext2(markuptext(document.querySelector(".c1").value,"*","strong"),"_","em");
+ document.querySelector(".c23").innerHTML=markuptext2(markuptext(document.querySelector(".c2").value,"*","strong"),"_","em");
+ document.querySelector(".c24").innerHTML=markuptext2(markuptext(document.querySelector(".c3").value,"*","strong"),"_","em");
+ document.querySelector(".c25").innerHTML=markuptext2(markuptext(document.querySelector(".c4").value,"*","strong"),"_","em");
+ document.querySelector(".c26").innerHTML=markuptext2(markuptext(document.querySelector(".c5").value,"*","strong"),"_","em");
+ document.querySelector(".c27").innerHTML=markuptext2(markuptext(document.querySelector(".c6").value,"*","strong"),"_","em");
+ document.querySelector(".c28").innerHTML=markuptext2(markuptext(document.querySelector(".c7").value,"*","strong"),"_","em");
+ document.querySelector(".c29").innerHTML=markuptext2(markuptext(document.querySelector(".c8").value,"*","strong"),"_","em");
+ document.querySelector(".c30").innerHTML=markuptext2(markuptext(document.querySelector(".c9").value,"*","strong"),"_","em");
+ document.querySelector(".c31").innerHTML=markuptext2(markuptext(document.querySelector(".c10").value,"*","strong"),"_","em");
   
   
  
@@ -344,6 +344,7 @@ generate.addEventListener("click",()=>{
   else{
   document.querySelector(".projects").setAttribute("style","display:visible;"); 
   strings = markuptext(strings,"*","strong"); 
+  strings = markuptext2(strings,"_","em");
   document.querySelector("#PJ-list").innerHTML=strings;
   }
 
@@ -363,6 +364,7 @@ generate.addEventListener("click",()=>{
   else{
     document.querySelector(".skl").setAttribute("style","display:visible;");
     st6 = markuptext(st6,"*","strong");
+    st6 = markuptext2(st6,"_","em");
   document.querySelector("#skil-list").innerHTML=st6;
   }
   
@@ -409,6 +411,7 @@ k++;
  else{
   document.querySelector(".int1").setAttribute("style","display:visible;");   
   string1 = markuptext(string1,"*","strong");
+  string1 = markuptext2(string1,"_","em");
  document.querySelector("#IN-list").innerHTML=string1;
  }
   let ai=document.getElementsByClassName("ai");
@@ -425,6 +428,7 @@ k++;
   else{
     document.querySelector(".honours").setAttribute("style","display:visible;"); 
     st4 = markuptext(st4,"*","strong");   
+    st4 = markuptext2(st4,"_","em");
   document.querySelector("#AC-list").innerHTML=st4;
   }
   let res=document.getElementsByClassName("res");
@@ -440,7 +444,8 @@ k++;
   }
   else{
   document.querySelector(".por").setAttribute("style","display:visible;"); 
-  st0 = markuptext(st0,"*","strong"); 
+  st0 = markuptext(st0,"*","strong");
+  st0 = markuptext2(st0,"_","em"); 
   document.querySelector("#P-list").innerHTML=st0;
   }
   let str88 = document.getElementById("Inputaddres").value;
@@ -460,6 +465,7 @@ k++;
   
   if(str87!=''){
     str_f = markuptext(str_f,"*","strong");
+    str_f = markuptext2(str_f,"_","em");
  document.querySelector(".contact").innerHTML=str_f;
   }
  document.querySelector("#input_f").setAttribute("style","display:none;");
@@ -471,14 +477,14 @@ k++;
 
 
 
- document.querySelector("#deg1").innerHTML=document.querySelector("#inputboard1").value;
- document.querySelector("#in1").innerHTML=document.querySelector("#inputyear1").value;
- document.querySelector("#r1").innerHTML=document.querySelector("#inpupercentage1").value;
- document.querySelector("#y1").innerHTML=document.querySelector("#inpupass1").value;
- document.querySelector("#deg").innerHTML=document.querySelector("#inputborad").value;
- document.querySelector("#inn").innerHTML=document.querySelector("#inpuyear").value;
- document.querySelector("#r").innerHTML=document.querySelector("#inpupercentage").value;
- document.querySelector("#yre").innerHTML=document.querySelector("#inpupass").value;
+ document.querySelector("#deg1").innerHTML=markuptext2(markuptext(document.querySelector("#inputboard1").value,"*","strong"),"_","em");
+ document.querySelector("#in1").innerHTML=markuptext2(markuptext(document.querySelector("#inputyear1").value,"*","strong"),"_","em");
+ document.querySelector("#r1").innerHTML=markuptext2(markuptext(document.querySelector("#inpupercentage1").value,"*","strong"),"_","em");
+ document.querySelector("#y1").innerHTML=markuptext2(markuptext(document.querySelector("#inpupass1").value,"*","strong"),"_","em");
+ document.querySelector("#deg").innerHTML=markuptext2(markuptext(document.querySelector("#inputborad").value,"*","strong"),"_","em");
+ document.querySelector("#inn").innerHTML=markuptext2(markuptext(document.querySelector("#inpuyear").value,"*","strong"),"_","em");
+ document.querySelector("#r").innerHTML=markuptext2(markuptext(document.querySelector("#inpupercentage").value,"*","strong"),"_","em");
+ document.querySelector("#yre").innerHTML=markuptext2(markuptext(document.querySelector("#inpupass").value,"*","strong"),"_","em");
 
  
  let temp=document.getElementById("temp2");
@@ -560,31 +566,93 @@ function markuptext(text,identifier,htmltag)
     var array = text.split(identifier);
     var previous = "";
     const l1 = array.length;
-    console.log(l1);
+   // console.log(l1);
     var previous_i;
-    if(l1%2 == 0){
-      //console.log(l1);
-      array[eval(l1-1)]= "*"+array[eval(l1-1)];
-    }
     for (i = 0; i < array.length; i++) {
         if (i % 2)
-        { 
-           //odd
+        {  let f=0;
+          if(eval(i)>2)
+          {  k = eval(i-2);
+             if(array[k]=="**"){
+               f=1;
+               array[k]="*";
+               array[k+1]="<"+htmltag+">"+previous+"</"+htmltag+">";
+             }
+          } 
+          if(eval(i)==eval(l1-1) && f==0){
+            //console.log(l1);
+            array[eval(l1-1)]= "*"+array[eval(l1-1)];
+          }
         }
         else if (i!=0)
-        {
+        { 
             previous_i = eval(i-1);
             var l = previous.length;
-            if(previous[0]!=" " && previous[l-1]!=" ")
+            if(previous[0]!=" " && previous[l-1]!=" " && l>0)
             array[previous_i] = "<"+htmltag+">"+previous+"</"+htmltag+">";
-            else if(previous[0]==" " && previous[l-1]==" ")
+            else if(previous[0]==" " && previous[l-1]==" " && l>0)
             {array[previous_i]= "* " + previous+ " *";
             }
             else if(previous[0]==" "){
               array[previous_i]= '* '+previous+"*";
             }
+            else if(previous==""){
+              array[previous_i]= "**"+previous;
+            }
             else{
               array[previous_i]= "*"+previous+" *";
+            }
+        }
+        previous = array[i];
+    }
+ //   console.log(l1);
+   
+    var newtext = "";
+    for (i = 0; i < array.length; i++) {
+        newtext += array[i];
+    }
+    return newtext;
+}
+function markuptext2(text,identifier,htmltag)
+{
+    var array = text.split(identifier);
+    var previous = "";
+    const l1 = array.length;
+   // console.log(l1);
+    var previous_i;
+    for (i = 0; i < array.length; i++) {
+        if (i % 2)
+        {  let f=0;
+          if(eval(i)>2)
+          {  k = eval(i-2);
+             if(array[k]=="__"){
+               f=1;
+               array[k]="_";
+               array[k+1]="<"+htmltag+">"+previous+"</"+htmltag+">";
+             }
+          } 
+          if(eval(i)==eval(l1-1) && f==0){
+            //console.log(l1);
+            array[eval(l1-1)]= "_"+array[eval(l1-1)];
+          }
+        }
+        else if (i!=0)
+        { 
+            previous_i = eval(i-1);
+            var l = previous.length;
+            if(previous[0]!=" " && previous[l-1]!=" " && l>0)
+            array[previous_i] = "<"+htmltag+">"+previous+"</"+htmltag+">";
+            else if(previous[0]==" " && previous[l-1]==" " && l>0)
+            {array[previous_i]= "_ " + previous+ " _";
+            }
+            else if(previous[0]==" "){
+              array[previous_i]= '_ '+previous+"_";
+            }
+            else if(previous==""){
+              array[previous_i]= "__"+previous;
+            }
+            else{
+              array[previous_i]= "_"+previous+" _";
             }
         }
         previous = array[i];
