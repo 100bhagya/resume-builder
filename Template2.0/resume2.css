@@ -132,7 +132,7 @@ body {
     border: 1px solid white;
     transition: transform 200ms ease;
     float: right;
-    margin: -6px 2px;
+    margin: -5px 2px;
 }
 
 /*#input_f {
@@ -302,4 +302,16 @@ tr {
   font-weight: 700;
   font-size: 2.4rem;
   margin: 0.3rem;
+}
+.right1{
+  text-align: right;
+}
+.btn11{
+  background: rgb(77, 77, 162);
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -4px 2px;
 }

@@ -87,10 +87,21 @@ internship_button.addEventListener("click",()=>{
     input.classList.add("form-control");
     input.setAttribute("placeholder","Elaborate your work");
     input.classList.add("mt-2");
-
-  
-
     
+   
+    let bt2 = document.createElement("div");
+    bt2.classList.add("container");
+    bt2.classList.add("btn-co");
+    bt2.classList.add("right1");
+    
+
+   let bt1 = document.createElement("button");
+    bt1.classList.add("button");
+    bt1.classList.add("btn11");
+    bt1.classList.add("btn1");
+    bt1.innerText='+'; 
+   // after.insertBefore()
+   bt2.appendChild(bt1);
 
     let msg=document.createElement("button");
     msg.classList.add("form-text");
@@ -148,6 +159,39 @@ internship_button.addEventListener("click",()=>{
 
     after.insertBefore(newinput,before);
     after.insertBefore(input,before);
+
+
+    bt1.addEventListener("click",()=>{
+      let newinput1=document.createElement("input");
+      newinput1.classList.add("form-control");
+      newinput1.classList.add("form-work");
+      newinput1.setAttribute("placeholder","Elaborate your work");
+      newinput1.classList.add("mt-2");
+      newinput1.classList.add("sub");
+      let msg1=document.createElement("button");
+      msg1.classList.add("form-text");
+      msg1.classList.add("button-sub");
+      msg1.innerText="-";
+    
+    
+    
+       let before1= bt2;
+      // let after=document.querySelector("#extra");
+    
+    
+      after.insertBefore(newinput1,before1);
+    
+      after.insertBefore(msg1,before1);
+    
+     msg1.addEventListener("click",()=>{
+        newinput1.remove();
+        msg1.remove();
+      })
+    
+    
+    });
+
+    after.insertBefore(bt2,before);
     after.insertBefore(date,before);
     after.insertBefore(msg,before);
 
@@ -156,6 +200,7 @@ internship_button.addEventListener("click",()=>{
       newinput.remove();
       input.remove();
       msg.remove();
+      bt2.remove();
     })
 
   })
