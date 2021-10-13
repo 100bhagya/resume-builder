@@ -1,4 +1,5 @@
 const skill_button=document.querySelector("#b_button");
+const intern_button=document.querySelector("#b1_button");
 const internship_button=document.querySelector("#in_button");
 const ed_button=document.querySelector("#ed_button");
 const project_button=document.querySelector("#project_button");
@@ -38,10 +39,40 @@ skill_button.addEventListener("click",funct= ()=>{
 
 
 });
+intern_button.addEventListener("click",funct= ()=>{
 
+  let newinput1=document.createElement("input");
+  newinput1.classList.add("form-control");
+  newinput1.classList.add("form-work");
+  newinput1.setAttribute("placeholder","Elaborate your work");
+  newinput1.classList.add("mt-2");
+  newinput1.classList.add("sub");
+  let msg1=document.createElement("button");
+  msg1.classList.add("form-text");
+  msg1.classList.add("button-sub");
+  msg1.innerText="-";
+
+
+
+  let before=document.querySelector("#br_button");
+  let after=document.querySelector("#extra");
+
+
+  after.insertBefore(newinput1,before);
+
+  after.insertBefore(msg1,before);
+
+ msg1.addEventListener("click",()=>{
+    newinput1.remove();
+    msg1.remove();
+  })
+
+
+});
 
 
 internship_button.addEventListener("click",()=>{
+ 
 
     let newinput=document.createElement("input");
 
@@ -49,6 +80,29 @@ internship_button.addEventListener("click",()=>{
     newinput.classList.add("interns");
     newinput.setAttribute("placeholder","Enter here");
     newinput.classList.add("mt-2");
+
+
+    let input=document.createElement("input");
+    input.classList.add("form-work");
+    input.classList.add("form-control");
+    input.setAttribute("placeholder","Elaborate your work");
+    input.classList.add("mt-2");
+    
+   
+    let bt2 = document.createElement("div");
+    bt2.classList.add("container");
+    bt2.classList.add("btn-co");
+    bt2.classList.add("right1");
+    
+
+   let bt1 = document.createElement("button");
+    bt1.classList.add("button");
+    bt1.classList.add("btn11");
+    bt1.classList.add("btn1");
+    bt1.innerText='+'; 
+   // after.insertBefore()
+   bt2.appendChild(bt1);
+
     let msg=document.createElement("button");
     msg.classList.add("form-text");
     msg.classList.add("button-sub");
@@ -104,13 +158,49 @@ internship_button.addEventListener("click",()=>{
 
 
     after.insertBefore(newinput,before);
+    after.insertBefore(input,before);
+
+
+    bt1.addEventListener("click",()=>{
+      let newinput1=document.createElement("input");
+      newinput1.classList.add("form-control");
+      newinput1.classList.add("form-work");
+      newinput1.setAttribute("placeholder","Elaborate your work");
+      newinput1.classList.add("mt-2");
+      newinput1.classList.add("sub");
+      let msg1=document.createElement("button");
+      msg1.classList.add("form-text");
+      msg1.classList.add("button-sub");
+      msg1.innerText="-";
+    
+    
+    
+       let before1= bt2;
+      // let after=document.querySelector("#extra");
+    
+    
+      after.insertBefore(newinput1,before1);
+    
+      after.insertBefore(msg1,before1);
+    
+     msg1.addEventListener("click",()=>{
+        newinput1.remove();
+        msg1.remove();
+      })
+    
+    
+    });
+
+    after.insertBefore(bt2,before);
     after.insertBefore(date,before);
     after.insertBefore(msg,before);
 
     msg.addEventListener("click",()=>{
       date.remove();
       newinput.remove();
+      input.remove();
       msg.remove();
+      bt2.remove();
     })
 
   })
@@ -350,6 +440,8 @@ generate.addEventListener("click",()=>{
 
   document.querySelector("#names_").innerHTML=document.querySelector("#name").value;
 
+
+
   let skillst=document.getElementsByClassName("skillst");
   let st6=''
 
@@ -358,6 +450,7 @@ generate.addEventListener("click",()=>{
     st6+=`<li> ${e.value} </li>`;
 
   }
+
   if(st6 == ''){
     document.querySelector(".skl").setAttribute("style","display:none;");
   }
@@ -367,6 +460,26 @@ generate.addEventListener("click",()=>{
     st6 = markuptext2(st6,"_","em");
   document.querySelector("#skil-list").innerHTML=st6;
   }
+
+
+// -----i edited----
+// let int1=document.getElementsByClassName("form-work ");
+//   let strings=''
+
+//   for(let x of int1)
+//   { if(x.value != '')
+//     string+=`<li> ${x.value} </li>`;
+//   }
+//   if(string==''){
+//     document.querySelector(".int1").setAttribute("style","display:none;");
+//   }
+//   else{
+//   document.querySelector(".int1").setAttribute("style","display:visible;");  
+//   document.querySelector("#IN-list").innerHTML=strings;
+//   }
+
+// --------i edited
+
   
   let int=document.getElementsByClassName("interns");
  
@@ -375,8 +488,22 @@ generate.addEventListener("click",()=>{
   for(let e of int)
   { if(e.value=='')break;
     st[k]=` ${e.value} `;
-k++;
+   k++;
   }
+//  ------i edited------
+  let work=document.getElementsByClassName("form-work");
+ 
+ const st1 = [];
+ let l = 0 ;
+  for(let f of work)
+  { if(f.value=='')break;
+    st1[l]=` ${f.value} `;
+  l++;
+  }
+
+
+  
+  
  
   let fr = document.getElementsByClassName("ff");
 
@@ -402,8 +529,10 @@ k++;
  for(let j=0;j<k;j++)
  { 
    string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
+   
    string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
    string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
+   string1+=`<p>`+st1[j]+`</p>`;
  }
  if(string1==''){
    document.querySelector(".int1").setAttribute("style","display:none;");

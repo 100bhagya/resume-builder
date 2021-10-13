@@ -101,13 +101,38 @@ body {
   color: grey;
   margin-left: 4px;
 }
-
+/* .form-work{
+  display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
 .ff {
   width: 32%;
 }
 
 .too {
   width: 32%;
+}
+#b1_button{
+  background: rgb(77, 77, 162);
+    font-size: 0.6rem;
+    color: white;
+    border: 1px solid white;
+    transition: transform 200ms ease;
+    float: right;
+    margin: -5px 2px;
 }
 
 /*#input_f {
@@ -277,4 +302,16 @@ tr {
   font-weight: 700;
   font-size: 2.4rem;
   margin: 0.3rem;
+}
+.right1{
+  text-align: right;
+}
+.btn11{
+  background: rgb(77, 77, 162);
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -4px 2px;
 }
