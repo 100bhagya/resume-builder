@@ -135,6 +135,7 @@ body {
     margin: -5px 2px;
 }
 
+
 /*#input_f {
       display: none;
     }*/
@@ -314,4 +315,22 @@ tr {
   transition: transform 200ms ease;
   float: right;
   margin: -4px 2px;
+}
+.btn12{
+  background: rgb(77, 77, 162);
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -4px 2px;
+}
+#b1_button{
+  background: rgb(77, 77, 162);
+    font-size: 0.6rem;
+    color: white;
+    border: 1px solid white;
+    transition: transform 200ms ease;
+    float: right;
+    margin: -5px 2px;
 }
