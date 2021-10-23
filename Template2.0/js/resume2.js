@@ -624,7 +624,9 @@ generate.addEventListener("click",()=>{
    
    string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
    string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
-   string1+=`<p>`+st1[j]+`</p>`;
+   for(let x=0;x<l;x++){
+   string1+=`<li style="margin-left:30px">`+st1[x]+`</li>`;
+   }
  }
  if(string1==''){
    document.querySelector(".int1").setAttribute("style","display:none;");
