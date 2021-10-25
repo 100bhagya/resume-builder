@@ -525,16 +525,59 @@ generate.addEventListener("click",()=>{
  document.querySelector(".c29").innerHTML=markuptext2(markuptext(document.querySelector(".c8").value,"*","strong"),"_","em");
  document.querySelector(".c30").innerHTML=markuptext2(markuptext(document.querySelector(".c9").value,"*","strong"),"_","em");
  document.querySelector(".c31").innerHTML=markuptext2(markuptext(document.querySelector(".c10").value,"*","strong"),"_","em");
+//  let int=document.getElementsByClassName("interns");
  
+//  const st = [];
+//  let k = 0 ;
+//   for(let e of int)
+//   { if(e.value=='')break;
+//     st[k]=` ${e.value} `;
+//    k++;
+//   }
+// //  ------i edited------
+//   let work=document.getElementsByClassName("form-work");
  
+//  const st1 = [];
+//  let l = 0 ;
+//   for(let f of work)
+//   { if(f.value=='')break;
+//     st1[l]=` ${f.value} `;
+//   l++;
+//   }
+
+//  .............
   let proj=document.getElementsByClassName("projj");
+  const stt = [];
+   let a = 0 ;
+    for(let ee of proj)
+    { if(ee.value=='')break;
+      stt[a]=` ${ee.value} `;
+     a++;
+    }
+    let projectt=document.getElementsByClassName("form-project");
+ 
+ const stt1 = [];
+ let ll = 0 ;
+  for(let ff of projectt)
+  { if(ff.value=='')break;
+    stt1[ll]=` ${ff.value} `;
+  ll++;
+  }
+
   let strings=''
 
-  for(let e of proj)
-  { if(e.value != '')
-    strings+=`<li> ${e.value} </li>`;
+  // for(let e of proj)
+  // { if(e.value != '')
+  //   strings+=`<li> ${e.value} </li>`;
+  // }
+  for(let j=0;j<a;j++)
+  { 
+    strings += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:-26px">`+ stt[j] + `</h6>`;
+
+    for(let xx=0;xx<ll;xx++){
+    strings+=`<li style="margin-left:3px">`+stt1[xx]+`</li>`;
+    }
   }
-  
   
   if(strings==''){
     document.querySelector(".projects").setAttribute("style","display:none;");
