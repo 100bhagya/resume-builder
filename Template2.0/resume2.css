@@ -136,6 +136,42 @@ body {
 }
 
 
+/* .res{
+  display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+.ff8 {
+  width: 32%;
+}
+
+.too8 {
+  width: 32%;
+}
+#res_button{
+  background: rgb(77, 77, 162);
+    font-size: 0.6rem;
+    color: white;
+    border: 1px solid white;
+    transition: transform 200ms ease;
+    float: right;
+    margin: -5px 2px;
+}
+
+
+
 /*#input_f {
       display: none;
     }*/
@@ -194,6 +230,12 @@ body {
 #IN-list {
   padding-left: 0rem;
 }
+
+
+#P-list {
+  padding-left: 0rem;
+}
+
 
 .hea {
   color: rgb(88, 85, 85);
@@ -326,6 +368,30 @@ tr {
   margin: -4px 2px;
 }
 #b1_button{
+  background: rgb(77, 77, 162);
+    font-size: 0.6rem;
+    color: white;
+    border: 1px solid white;
+    transition: transform 200ms ease;
+    float: right;
+    margin: -5px 2px;
+}
+
+
+.right8{
+  text-align: right;
+}
+.btn18{
+  background: rgb(77, 77, 162);
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -4px 2px;
+}
+
+#res_button{
   background: rgb(77, 77, 162);
     font-size: 0.6rem;
     color: white;
