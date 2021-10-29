@@ -572,7 +572,7 @@ generate.addEventListener("click",()=>{
   // }
   for(let j=0;j<a;j++)
   { 
-    strings += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:-26px">`+ stt[j] + `</h6>`;
+    strings += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;padding:2px;margin-bottom:4px;margin-top:8px;margin-left: -32px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ stt[j] + `</h6>`;
 
     for(let xx=0;xx<ll;xx++){
     strings+=`<li style="margin-left:3px">`+stt1[xx]+`</li>`;
@@ -660,17 +660,17 @@ generate.addEventListener("click",()=>{
     i++;
   }
  
- let string1='';
- for(let j=0;j<k;j++)
- { 
-   string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
-   
-   string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
-   string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
-   for(let x=0;x<l;x++){
-   string1+=`<li style="margin-left:30px">`+st1[x]+`</li>`;
-   }
- }
+  let string1='';
+  for(let j=0;j<k;j++)
+  { 
+    string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px; margin-top:8px">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
+    
+    string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
+    string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
+    for(let x=0;x<l;x++){
+    string1+=`<li style="margin-left:30px;">`+st1[x]+`</li>`;
+    }
+  }
  if(string1==''){
    document.querySelector(".int1").setAttribute("style","display:none;");
  }
