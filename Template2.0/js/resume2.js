@@ -1,16 +1,11 @@
 const skill_button=document.querySelector("#b_button");
-
 const intern_button=document.querySelector("#b1_button");
 const internship_button=document.querySelector("#in_button");
-
 const ed_button=document.querySelector("#ed_button");
-
 const project_button=document.querySelector("#project_button");
 const proj_button=document.querySelector("#b2_button");
 
-const respon_button=document.querySelector("#res_button");
-const responsibility_button=document.querySelector("#por_button");
-
+const responsibility_button=document.querySelector("#respon_button");
 const achieve_button=document.querySelector("#ah_button");
 
 
@@ -212,182 +207,35 @@ internship_button.addEventListener("click",()=>{
 
   })
  
-
-
-
-  respon_button.addEventListener("click",funct= ()=>{
-
-    let newinput8=document.createElement("input");
-    newinput8.classList.add("form-control");
-    newinput8.classList.add("res");
-    newinput8.setAttribute("placeholder","Elaborate your work");
-    newinput8.classList.add("mt-2");
-    newinput8.classList.add("sub");
-    let msg8=document.createElement("button");
-    msg8.classList.add("form-text");
-    msg8.classList.add("button-sub");
-    msg8.innerText="-";
   
-  
-  
-    let before=document.querySelector("#ad_button");
-    let after=document.querySelector("#add");
-  
-  
-    after.insertBefore(newinput8,before);
-  
-    after.insertBefore(msg8,before);
-  
-   msg8.addEventListener("click",()=>{
-      newinput8.remove();
-      msg8.remove();
-    })
-  
-  
-  });
-
-
-responsibility_button.addEventListener("click",()=>{
- 
+  responsibility_button.addEventListener("click",()=>{
 
     let newinput=document.createElement("input");
-
     newinput.classList.add("form-control");
-    newinput.classList.add("responsibility");
-    newinput.setAttribute("placeholder","Enter here");
+    newinput.classList.add("res");
+     newinput.setAttribute("placeholder","Enter here");
     newinput.classList.add("mt-2");
-
-
-    let input=document.createElement("input");
-    input.classList.add("res");
-    input.classList.add("form-control");
-    input.setAttribute("placeholder","Elaborate your work");
-    input.classList.add("mt-2");
-    
-   
-    let bt9 = document.createElement("div");
-    bt9.classList.add("container");
-    bt9.classList.add("btn-co");
-    bt9.classList.add("right8");
-    
-
-   let bt8 = document.createElement("button");
-    bt8.classList.add("button");
-    bt8.classList.add("btn18");
-    bt8.classList.add("btn8");
-    bt8.innerText='+'; 
-   // after.insertBefore()
-   bt9.appendChild(bt8);
-
     let msg=document.createElement("button");
     msg.classList.add("form-text");
     msg.classList.add("button-sub");
      msg.innerText="-";
 
 
-    /*From--to creation here*/
-
-     const date=document.createElement("div");
-     date.classList.add("date");
-
-     const froms=document.createElement("label");
-     froms.classList.add("col-form-label");
-     froms.classList.add("from");
-     froms.innerHTML="From";
-
-
-     const from_ipt=document.createElement("input");
-     from_ipt.classList.add("form-control");
-     from_ipt.classList.add("form-control-sm");
-     from_ipt.classList.add("mt-1");
-     from_ipt.classList.add("ff8");
-
-
-     const to=document.createElement("label");
-     to.classList.add("col-form-label");
-     to.classList.add("from-to");
-     to.innerHTML="To";
-
-     const to_ipt=document.createElement("input");
-     to_ipt.classList.add("form-control");
-     to_ipt.classList.add("form-control-sm");
-     to_ipt.classList.add("mt-1");
-     to_ipt.classList.add("too8");
-
-
-
-     date.setAttribute("style","display:flex;");
-
-
-     date.appendChild(froms);
-     date.appendChild(from_ipt);
-     date.appendChild(to);
-     date.appendChild(to_ipt);
-
-     
-
-     /*-----------*/
-
-
-    let before=document.querySelector("#r_button");
-    let after=document.querySelector("#POR");
+    let before=document.querySelector("#resp_button");
+    let after=document.querySelector("#responsibility");
 
 
     after.insertBefore(newinput,before);
-    after.insertBefore(input,before);
-
-
-    bt8.addEventListener("click",()=>{
-      let newinput8=document.createElement("input");
-      newinput8.classList.add("form-control");
-      newinput8.classList.add("res");
-      newinput8.setAttribute("placeholder","Elaborate your work");
-      newinput8.classList.add("mt-2");
-      newinput8.classList.add("sub");
-      let msg8=document.createElement("button");
-      msg8.classList.add("form-text");
-      msg8.classList.add("button-sub");
-      msg8.innerText="-";
-    
-    
-    
-       let before8= bt9;
-      // let after=document.querySelector("#add");
-    
-    
-      after.insertBefore(newinput8,before8);
-    
-      after.insertBefore(msg8,before8);
-    
-     msg8.addEventListener("click",()=>{
-        newinput8.remove();
-        msg8.remove();
-      })
-    
-    
-    });
-
-    after.insertBefore(bt9,before);
-    after.insertBefore(date,before);
     after.insertBefore(msg,before);
 
+
     msg.addEventListener("click",()=>{
-      date.remove();
       newinput.remove();
-      input.remove();
       msg.remove();
-      bt9.remove();
     })
 
+
   })
- 
-
-
-
-
-
-
-
 
   proj_button.addEventListener("click",funct= ()=>{
 
@@ -788,6 +636,9 @@ generate.addEventListener("click",()=>{
   l++;
   }
 
+
+  
+  
  
   let fr = document.getElementsByClassName("ff");
 
@@ -829,82 +680,6 @@ generate.addEventListener("click",()=>{
   string1 = markuptext2(string1,"_","em");
  document.querySelector("#IN-list").innerHTML=string1;
  }
-
-
-
-
-
-let res=document.getElementsByClassName("responsibility");
- 
-  st8 = [];
-  k = 0 ;
-  for(let e of res)
-  { if(e.value=='')break;
-    st[k]=` ${e.value} `;
-   k++;
-  }
-//  ------i edited------
-  let pos=document.getElementsByClassName("res");
- 
-  st18 = [];
-  l = 0 ;
-  for(let f of pos)
-  { if(f.value=='')break;
-    st1[l]=` ${f.value} `;
-  l++;
-  }
-
- 
-  let frt = document.getElementsByClassName("ff8");
-
-   str18 =[];
-   i=0;
- for(let e of frt){
-   if(e.value=='')break;
- str1[i]=` ${e.value} `;
- i++;
-  }
-
-
-  let to2t = document.getElementsByClassName("too8");
-   str28 =[];
-  i=0;
-  for(let e of to2t){
-    if(e.value=='')break;
-    str2[i]= ` ${e.value} `;
-    i++;
-  }
- 
- string1='';
- for(let j=0;j<k;j++)
- { 
-   string1 += `<li style="display:flex;justify-content:space-between;list-style:none;background:#e3e3e3;;padding:2px;margin-bottom:4px;">`+ `<h6 style="font-weight:700;margin-left:1rem;">`+ st[j] + `</h6>`;
-   
-   string1 += `<div>`+ `<h7 style="margin-right:2rem;">`  + str1[j]  + '&nbsp' + '-';
-   string1 +=  '&nbsp'+ str2[j] + `</h7>` +`</div>`+ `</li>` ;
-   for(let x=0;x<l;x++){
-   string1+=`<li style="margin-left:30px">`+st1[x]+`</li>`;
-   }
- }
- if(string1==''){
-   document.querySelector(".por").setAttribute("style","display:none;");
- }
- else{
-  document.querySelector(".por").setAttribute("style","display:visible;");   
-  string1 = markuptext(string1,"*","strong");
-  string1 = markuptext2(string1,"_","em");
- document.querySelector("#P-list").innerHTML=string1;
- }
-
- 
-
-
-
-
-
-
-
-
   let ai=document.getElementsByClassName("ai");
   let st4=''
 
@@ -922,19 +697,32 @@ let res=document.getElementsByClassName("responsibility");
     st4 = markuptext2(st4,"_","em");
   document.querySelector("#AC-list").innerHTML=st4;
   }
+  let res=document.getElementsByClassName("res");
+  let st0=''
 
+  for(let e of res)
+  {  if(e.value!='')
+    st0+=`<li> ${e.value} </li>`;
 
-  
-
-  document.getElementById("gitT").innerHTML = document.getElementById("Inputgit").value;
-  document.getElementById("linkedT").innerHTML = document.getElementById("Inputlinked").value;
-  document.getElementById("portfolioT").innerHTML = document.getElementById("Inputother").value;
-
-
+  }
+  if(st0==''){
+    document.querySelector(".por").setAttribute("style","display:none;");
+  }
+  else{
+  document.querySelector(".por").setAttribute("style","display:visible;"); 
+  st0 = markuptext(st0,"*","strong");
+  st0 = markuptext2(st0,"_","em"); 
+  document.querySelector("#P-list").innerHTML=st0;
+  }
   let str88 = document.getElementById("Inputaddres").value;
   if(str88!=''){
   document.querySelector(".address").innerHTML= "Address : " + str88;
   }
+
+
+  document.getElementById("gitT").innerHTML = document.getElementById("Inputgit").value;
+  document.getElementById("linkedT").innerHTML = document.getElementById("Inputlinked").value;
+  document.getElementById("portfolioT").innerHTML = document.getElementById("Inputother").value;
 
 
  let str87=document.getElementById("Inputcontact0").value;
