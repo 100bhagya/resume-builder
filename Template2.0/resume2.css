@@ -191,9 +191,16 @@ body {
   margin-top: 1rem;
 }
 
+
 #IN-list {
   padding-left: 0rem;
 }
+
+
+#P-list {
+  padding-left: 0rem;
+}
+
 
 .hea {
   color: rgb(88, 85, 85);
@@ -326,6 +333,32 @@ tr {
   margin: -4px 2px;
 }
 #b1_button{
+  background: rgb(77, 77, 162);
+    font-size: 0.6rem;
+    color: white;
+    border: 1px solid white;
+    transition: transform 200ms ease;
+    float: right;
+    margin: -5px 2px;
+}
+
+
+
+
+ .right8{
+  text-align: right;
+}
+.btn18{
+  background: rgb(77, 77, 162);
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -4px 2px;
+}
+
+#res_button{
   background: rgb(77, 77, 162);
     font-size: 0.6rem;
     color: white;
