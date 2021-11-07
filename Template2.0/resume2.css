@@ -125,16 +125,15 @@ body {
 .too {
   width: 32%;
 }
-#b1_button{
+#b1_button {
   background: rgb(77, 77, 162);
-    font-size: 0.6rem;
-    color: white;
-    border: 1px solid white;
-    transition: transform 200ms ease;
-    float: right;
-    margin: -5px 2px;
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -5px 2px;
 }
-
 
 /*#input_f {
       display: none;
@@ -191,16 +190,13 @@ body {
   margin-top: 1rem;
 }
 
-
 #IN-list {
   padding-left: 0rem;
 }
 
-
 #P-list {
   padding-left: 0rem;
 }
-
 
 .hea {
   color: rgb(88, 85, 85);
@@ -311,10 +307,10 @@ tr {
   font-size: 2.4rem;
   margin: 0.3rem;
 }
-.right1{
+.right1 {
   text-align: right;
 }
-.btn11{
+.btn11 {
   background: rgb(77, 77, 162);
   font-size: 0.6rem;
   color: white;
@@ -323,7 +319,7 @@ tr {
   float: right;
   margin: -4px 2px;
 }
-.btn12{
+.btn12 {
   background: rgb(77, 77, 162);
   font-size: 0.6rem;
   color: white;
@@ -332,23 +328,20 @@ tr {
   float: right;
   margin: -4px 2px;
 }
-#b1_button{
+#b1_button {
   background: rgb(77, 77, 162);
-    font-size: 0.6rem;
-    color: white;
-    border: 1px solid white;
-    transition: transform 200ms ease;
-    float: right;
-    margin: -5px 2px;
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -5px 2px;
 }
 
-
-
-
- .right8{
+.right8 {
   text-align: right;
 }
-.btn18{
+.btn18 {
   background: rgb(77, 77, 162);
   font-size: 0.6rem;
   color: white;
@@ -358,12 +351,16 @@ tr {
   margin: -4px 2px;
 }
 
-#res_button{
+#res_button {
   background: rgb(77, 77, 162);
-    font-size: 0.6rem;
-    color: white;
-    border: 1px solid white;
-    transition: transform 200ms ease;
-    float: right;
-    margin: -5px 2px;
+  font-size: 0.6rem;
+  color: white;
+  border: 1px solid white;
+  transition: transform 200ms ease;
+  float: right;
+  margin: -5px 2px;
+}
+
+.pgbreak {
+  page-break-before: always;
 }
