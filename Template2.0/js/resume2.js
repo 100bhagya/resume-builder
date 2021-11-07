@@ -168,6 +168,16 @@ internship_button.addEventListener("click", () => {
       newinput1.remove();
       msg1.remove();
     });
+
+    msg.addEventListener("click", () => {
+      date.remove();
+      newinput.remove();
+      input.remove();
+      msg.remove();
+      bt2.remove();
+      newinput1.remove();
+      msg1.remove();
+    });
   });
 
   after.insertBefore(bt2, before);
